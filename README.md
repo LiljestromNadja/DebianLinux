@@ -34,7 +34,7 @@ Seuraavaksi valitsin aloitusvalikosta asetukset eli **Settings**
 ->
 
 **System**  
-System -> Motherboard -> Extended Features -> Selected Enable EFI(Special OSes only)  
+System -> Motherboard -> Extended Features -> Valitsin Enable EFI(Special OSes only)  
 
 **Storage**  
 Storage -> Storage Devices -> Controller:IDE -> Valitsin kohdan “Empty”  
