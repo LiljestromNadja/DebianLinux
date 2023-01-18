@@ -192,7 +192,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 ![Näyttökuva (60)](https://user-images.githubusercontent.com/118609353/213276480-091e9d33-c34e-49bd-833a-8b132ed6c918.png)
 
-![Näyttökuva (61)](https://user-images.githubusercontent.com/118609353/213276517-0ca9b0f8-94f6-46bb-8e5c-3082c4f4a643.png)
+![Näyttökuva (61)](https://user-images.githubusercontent.com/118609353/213279849-6f374c52-2d83-4b49-8c7d-450854ec838b.png)
 
 ![Näyttökuva (62)](https://user-images.githubusercontent.com/118609353/213276547-9bad50e7-9535-4dbc-b2aa-9123902f16ac.png)
 
