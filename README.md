@@ -139,27 +139,28 @@ After admitting the changes, started the “LinuxDebian”
 
 Selected Debian GNU/Linux Live (kernel 5.10.0-20-amd64) (by clicking enter) from the list  
 
-(Patiently waited for a while. When the desktop finally opened, i chose Install Debian)  
+Patiently waited for a while. When the desktop finally opened, i chose Install Debian.  
+
 Language : American English
-Next ->
+Next ->  
 Region: Europe
 Zone: Helsinki
-Next ->
+Next ->  
 Keyboard: Finnish, Default (tested äö etc)
-Next ->
+Next ->  
 Select Storage Device: VBOX HARDDISK
 Chose Erase Disk 
-Next ->
-Added name Nadja
-added user name nadja
-computer name debbiedebian
-password nytlahti
-Next ->
+Next ->  
+Added name 
+Added user name 
+Added computer name 
+Added password 
+Next -> 
 Chose Install 
 
-(And another while of waiting)
+And another, longer while of waiting)
 
-Restarted the virtual machine after installing Linux because the user name and password didn’t work. 
+Restarted the virtual machine after installing Linux because for some reason the user name and password didn’t work. 
 
 
 
