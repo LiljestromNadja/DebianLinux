@@ -182,5 +182,30 @@ Virtualbox 7.0.6
 https://www.virtualbox.org/wiki/Downloads
 
 
-![Näyttökuva (55)](https://user-images.githubusercontent.com/118609353/213275966-5adf624e-a517-4e8d-9d2c-37da5ed3b745.png)
+![Näyttökuva (55)](https://user-images.githubusercontent.com/118609353/213276250-9bc0040a-9568-46b8-8b17-71dde3bbdb29.png)
 
+![Näyttökuva (56)](https://user-images.githubusercontent.com/118609353/213276313-e806fd43-113d-48d4-8d0f-f4500fb07436.png)
+
+![Näyttökuva (57)](https://user-images.githubusercontent.com/118609353/213276333-dfc49006-d6ee-4ad8-b66c-4f79c4083e09.png)
+
+![Näyttökuva (58)](https://user-images.githubusercontent.com/118609353/213276358-d435c827-957f-4579-a3e0-3b30ba309b3c.png)
+
+![Näyttökuva (59)](https://user-images.githubusercontent.com/118609353/213276399-27bf44a2-0bd0-4561-aac1-c5c9351bc73d.png)
+
+![Näyttökuva (60)](https://user-images.githubusercontent.com/118609353/213276480-091e9d33-c34e-49bd-833a-8b132ed6c918.png)
+
+![Näyttökuva (61)](https://user-images.githubusercontent.com/118609353/213276517-0ca9b0f8-94f6-46bb-8e5c-3082c4f4a643.png)
+
+![Näyttökuva (62)](https://user-images.githubusercontent.com/118609353/213276547-9bad50e7-9535-4dbc-b2aa-9123902f16ac.png)
+
+![Näyttökuva (63)](https://user-images.githubusercontent.com/118609353/213276578-8efb9409-cabd-49c2-bc10-5bf136db333f.png)
+
+![Näyttökuva (64)](https://user-images.githubusercontent.com/118609353/213276621-dee8a780-1b03-4c36-a0a7-41f1fbeec205.png)
+
+![Näyttökuva (65)](https://user-images.githubusercontent.com/118609353/213276639-693895e5-d4e4-44be-afd0-ef2e312700f5.png)
+
+![Näyttökuva (66)](https://user-images.githubusercontent.com/118609353/213276655-ad823e3b-bbdd-4937-816d-93a26af1404a.png)
+
+![Näyttökuva (67)](https://user-images.githubusercontent.com/118609353/213276667-6b819577-0e07-4fb5-b582-47bbded7840f.png)
+
+![Näyttökuva (68)](https://user-images.githubusercontent.com/118609353/213276686-9f2facb2-8737-4052-9718-96ebf21ae0a6.png)
