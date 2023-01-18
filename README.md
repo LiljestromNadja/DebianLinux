@@ -151,10 +151,10 @@ Next ->
 Select Storage Device: VBOX HARDDISK
 Chose Erase Disk 
 Next ->  
-Added name 
-Added user name 
-Added computer name 
-Added password 
+Added name   
+Added user name   
+Added computer name   
+Added password  
 Next -> 
 Chose Install 
 
