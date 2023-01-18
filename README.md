@@ -74,10 +74,10 @@ Tähän auttoi virtuaalikoneen käynnistäminen uudelleen.
 
 ### Laitteen ja käyttöjärjestelmän tiedot
 
-Laite ASUS R520QA-EJ143T  
-Suoritin AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G   2.70 GHz  
-Asennettu RAM	8,00 Gt (7,45 Gt käytettävissä)  
-Järjestelmätyyppi	64-bittinen käyttöjärjestelmä, x64-suoritin  
+Laite     ASUS R520QA-EJ143T  
+Suoritin      AMD A12-9720P RADEON R7, 12 COMPUTE CORES 4C+8G   2.70 GHz  
+Asennettu     RAM	8,00 Gt (7,45 Gt käytettävissä)  
+Järjestelmätyyppi     64-bittinen käyttöjärjestelmä, x64-suoritin  
 
 Käyttöjärjestelmä	Windows 10 Home  
 
