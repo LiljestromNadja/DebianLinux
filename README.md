@@ -158,7 +158,7 @@ Added password
 Next -> 
 Chose Install 
 
-And another, longer while of waiting
+And another, longer while of waiting (about 10 minutes).
 
 Restarted the virtual machine after installing Linux because for some reason the user name and password didn’t work. 
   
