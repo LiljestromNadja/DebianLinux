@@ -8,12 +8,10 @@ Asensin onnistuneesti Linux Debianin VirtualBoxilla virtuaalikoneeseen näiden v
 
 #### Tarvittavat asennustiedostot: 
 
-Debian 11.6.0
-
+Debian 11.6.0  
 https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-xfce+nonfree.iso
 
-Virtualbox 7.0.6
-
+Virtualbox 7.0.6  
 https://www.virtualbox.org/wiki/Downloads
 
 
