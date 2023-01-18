@@ -1,9 +1,8 @@
-
 # DebianLinux
 Installing Debian Linux on Virtualbox (Windows 10)
 
 
-## Linux Debianin asennus VirtualBoxilla virtuaalikoneeseen. 
+## Linux Debianin asennus VirtualBoxilla virtuaalikoneeseen 
 
 Tämä tehtävä osa Haaga-Helia ammattikorkeakoulun Linux-palvelimet -kurssia. Asensin onnistuneesti Linux Debianin VirtualBoxilla virtuaalikoneeseen näiden vaiheiden kautta. Käyttöjärjestelmänä Windows 10. 
 
@@ -107,7 +106,7 @@ https://www.youtube.com/watch?v=poCSq_0OmjE
 
 
 ## The same story in English
-I installed Linux Debianin succesfully on virtual machine through these steps. 
+I installed Linux Debian succesfully on virtual machine through these steps. 
 First, I had to download Debian Linux iso -file, there was a link to it on https://terokarvinen.com/2021/install-debian-on-virtualbox/  
 and Oracle VM VirtualBox Manager installation file https://www.virtualbox.org/wiki/Downloads. After downloading these files I installed the VirtualBox. 
 
@@ -208,7 +207,8 @@ https://www.virtualbox.org/wiki/Downloads
 ![Näyttökuva (67)](https://user-images.githubusercontent.com/118609353/213276667-6b819577-0e07-4fb5-b582-47bbded7840f.png)
 
 ![Näyttökuva (68)](https://user-images.githubusercontent.com/118609353/213276686-9f2facb2-8737-4052-9718-96ebf21ae0a6.png)
-![Näyttökuva (69)](https://user-images.githubusercontent.com/118609353/213286075-d835e19f-05bc-4435-ac24-63ea765c9e54.png)
-![Näyttökuva (70)](https://user-images.githubusercontent.com/118609353/213286081-2ecaff3a-f19c-4cfa-b2f5-c7fec1a163a0.png)
-![Näyttökuva (72)](https://user-images.githubusercontent.com/118609353/213286085-c9d8007d-6390-46e8-ad2d-ec4e2b2acbd8.png)
+
+![Näyttökuva (69)](https://user-images.githubusercontent.com/118609353/213286350-96052566-ce83-4daa-a897-8f4f96553651.png)
+![Näyttökuva (70)](https://user-images.githubusercontent.com/118609353/213286354-ac83a5d9-5b3d-40df-9e95-457657521cc3.png)
+![Näyttökuva (72)](https://user-images.githubusercontent.com/118609353/213286355-6d1ba351-51cd-4035-b49f-f0220bdce9a3.png)
 
