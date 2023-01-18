@@ -30,7 +30,7 @@ Hard disk file location and size: Size 60.00GB
 Hard disk file type and variant: VDI (VirtualBox Disk Image)  
 
 
-Seuraavaksi valitsin aloitusvalikosta asetukset eli **Settings**
+Seuraavaksi valitsin aloitusvalikosta harjoitetuksessa käytettävän virtuaalikoneen ja sen asetukset eli **Settings**
 ->
 
 **System**  
