@@ -44,9 +44,9 @@ Muutosten hyväksymisen jälkeen valitsin virtuaalikoneen ja aloitusvalikosta **
 
 Valitsin (enterillä) listasta **Debian GNU/Linux Live (kernel 5.10.0-20-amd64)**,  
 jonka jälkeen ainakin tällä koneella ja näillä asetuksilla jouduin odottamaan hieman pidemmän pienen hetken.  
-Kun työpöytä avautui, valitsin pikakuvakkeen **Install Debian**
+Kun työpöytä avautui, valitsin pikakuvakkeen **Install Debian**.
 
-**Debian** 
+**Debian**  
 Language : American English  
 Next ->  
 
@@ -54,7 +54,7 @@ Region: Europe
 Zone: Helsinki  
 Next ->  
 
-Keyboard: Finnish, Default (tested äö etc)  
+Keyboard: Finnish, Default (testasin ääkköset)  
 Next ->  
 
 Select Storage Device: VBOX HARDDISK  
@@ -96,7 +96,7 @@ https://www.virtualbox.org/wiki/Downloads
 Tero Karvinen - Install Debian on Virtualbox - Updated 2023:  
 https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
-How to Install Debian Linux in VirtualBox on Windows 10 | Beginners Guide | (Buster)  
+How to Install Debian Linux in VirtualBox on Windows 10 | Beginners Guide | (Buster):    
 https://www.youtube.com/watch?v=cx8GzudB6uE
 
 How to Install Debian Linux on VirtualBox in Windows | Beginners Guide:  
