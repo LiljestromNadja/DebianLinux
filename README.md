@@ -2,7 +2,7 @@
 Installing Debian Linux on Virtualbox (Windows 10)
 
 
-## Linux Debianin asennus VirtualBoxilla virtuaalikoneeseen. 
+## Linux Debianin asennus VirtualBoxilla virtuaalikoneeseen 
 
 Tämä tehtävä osa Haaga-Helia ammattikorkeakoulun Linux-palvelimet -kurssia. Asensin onnistuneesti Linux Debianin VirtualBoxilla virtuaalikoneeseen näiden vaiheiden kautta. Käyttöjärjestelmänä Windows 10. 
 
@@ -106,7 +106,7 @@ https://www.youtube.com/watch?v=poCSq_0OmjE
 
 
 ## The same story in English
-I installed Linux Debianin succesfully on virtual machine through these steps. 
+I installed Linux Debian succesfully on virtual machine through these steps. 
 First, I had to download Debian Linux iso -file, there was a link to it on https://terokarvinen.com/2021/install-debian-on-virtualbox/  
 and Oracle VM VirtualBox Manager installation file https://www.virtualbox.org/wiki/Downloads. After downloading these files I installed the VirtualBox. 
 
