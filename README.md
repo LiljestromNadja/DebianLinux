@@ -33,7 +33,7 @@ Hard disk file type and variant: VDI (VirtualBox Disk Image)
 Seuraavaksi valitsin aloitusvalikosta asetukset eli **Settings**
 ->
 
-**System** 
+**System**  
 System -> Motherboard -> Extended Features -> Selected Enable EFI(Special OSes only)  
 
 **Storage**  
