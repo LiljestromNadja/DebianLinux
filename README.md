@@ -178,16 +178,16 @@ Materials:
 Tero Karvinen - Install Debian on Virtualbox - Updated 2023:
 https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
-How to Install Debian Linux in VirtualBox on Windows 10 | Beginners Guide | (Buster)
+How to Install Debian Linux in VirtualBox on Windows 10 | Beginners Guide | (Buster):
 https://www.youtube.com/watch?v=cx8GzudB6uE
 
 How to Install Debian Linux on VirtualBox in Windows | Beginners Guide:
 https://www.youtube.com/watch?v=poCSq_0OmjE
 
-Debian 11.6.0
+Debian 11.6.0  
 https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.6.0-amd64-xfce+nonfree.iso
 
-Virtualbox 7.0.6
+Virtualbox 7.0.6  
 https://www.virtualbox.org/wiki/Downloads
 
 
