@@ -67,7 +67,7 @@ computer name
 password   
 Next ->  
 
-Lopuksi valitsin **Install**, jonka jälkeen kuluikin hieman pidempi (n. 10 min) tovi Linuxin asentuessa. 
+Lopuksi valitsin **Install**, jonka jälkeen kuluikin hieman pidempi tovi (n. 10 min) Linuxin asentuessa. 
 
 Asennuksen jälkeen tuli mutka matkaan, sillä vaikka syötin oikean salasanan niin tuli virheilmoitus väärästä salasanasta.  
 Tähän auttoi virtuaalikoneen käynnistäminen uudelleen. 
