@@ -108,7 +108,7 @@ https://www.youtube.com/watch?v=poCSq_0OmjE
 ## The same story in English
 I installed Linux Debianin succesfully on virtual machinethrough these steps. 
 First, I had to download Debian Linux iso -file, there was a link to it on https://terokarvinen.com/2021/install-debian-on-virtualbox/  
-and Oracle VM VirtualBox Manager installation file.  After downloading these files I installed the VirtualBox. 
+and Oracle VM VirtualBox Manager installation file https://www.virtualbox.org/wiki/Downloads. After downloading these files I installed the VirtualBox. 
 
 Steps in Oracle VM VirtualBox Manager
 
