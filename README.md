@@ -161,19 +161,10 @@ Chose Install
 And another, longer while of waiting
 
 Restarted the virtual machine after installing Linux because for some reason the user name and password didn’t work. 
-
+  
+  
 
 Materials:
-
-
-
-
-
-
-
-
-
-
 
 Tero Karvinen - Install Debian on Virtualbox - Updated 2023:
 https://terokarvinen.com/2021/install-debian-on-virtualbox/
