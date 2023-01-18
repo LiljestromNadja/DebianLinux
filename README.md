@@ -182,4 +182,5 @@ Virtualbox 7.0.6
 https://www.virtualbox.org/wiki/Downloads
 
 
+![Näyttökuva (55)](https://user-images.githubusercontent.com/118609353/213275966-5adf624e-a517-4e8d-9d2c-37da5ed3b745.png)
 
