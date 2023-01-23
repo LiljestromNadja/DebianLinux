@@ -12,7 +12,10 @@ Näiden harjoitusten avulla on tarkoitus saada näppituntumaa Linuxin komentoriv
 -[Nano](https://github.com/LiljestromNadja/DebianLinux/edit/main/h2_CommanderPenguin.md#nano)  
 -[Asciijump](https://github.com/LiljestromNadja/DebianLinux/edit/main/h2_CommanderPenguin.md#asciijump)  
 [Important directories](https://github.com/LiljestromNadja/DebianLinux/edit/main/h2_CommanderPenguin.md#important-directories)  
-[The Friendly M](https://github.com/LiljestromNadja/DebianLinux/edit/main/h2_CommanderPenguin.md#the-friendly-m) --> 
+[The Friendly M](https://github.com/LiljestromNadja/DebianLinux/edit/main/h2_CommanderPenguin.md#the-friendly-m) -->  
+
+
+
 Micro -editorin asentaminen  
 Listaa koneesi rauta  
 Kolmen komentoriviohjelman asentaminen:  
@@ -21,7 +24,7 @@ Kolmen komentoriviohjelman asentaminen:
 -Asciijump  
 -Useamman ohjelman asentaminen samalla komennolla  
 Important directories  
-<!-- The Friendly M-->
+Grep
 
 <br></br>
 
@@ -153,8 +156,43 @@ Tehtävä: FHS. Esittele kansiot, jotka on listattu "Command Line Basics Revisit
 
 
 <br></br>
-<!--### The Friendly M
-Tehtävä: The Friendly M. Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy 'man grep' ja tietysti verkosta.  -->
+### Grep  
+Tehtävä: The Friendly M. Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä. Ohjeita löytyy 'man grep' ja tietysti verkosta.  
+
+Komento, jolla saa grepin manuaalin:  
+
+     man grep
+     
+![Näyttökuva (124)](https://user-images.githubusercontent.com/118609353/214125521-462d9cf7-0dc4-45da-9a47-3fd4a40ec618.png)  
+
+Idea on siis:  
+
+     grep [OPTION]... PATTERNS [FILE]
+     
+
+![Näyttökuva (125)](https://user-images.githubusercontent.com/118609353/214126628-2e88f5f2-af3b-4a98-9b0f-4661203eb9b6.png)
+
+
+Kokeilin seuraavasti:    
+
+     grep -H 'and so is' newfile.md anothernewfile.md  
+    
+![Näyttökuva (126)](https://user-images.githubusercontent.com/118609353/214127677-477cb9ee-5ee1-4b55-a370-55c2720a051e.png)  
+
+     grep -i 'and so is' newfile.md anothernewfile.md  
+     
+![Näyttökuva (127)](https://user-images.githubusercontent.com/118609353/214128941-d4131384-8d0a-436c-87a5-704faddb770c.png)
+![Näyttökuva (129)](https://user-images.githubusercontent.com/118609353/214129614-f90f7b06-b972-41e6-b8ba-644a6312bc9f.png)  
+
+Poistin tiedostosta anothernewfile.md pienellä kirjoitetun "and so is" -tekstin ja kokeilin uudelleen:  
+
+     grep -H 'and so is' newfile.md anothernewfile.md 
+     
+![Näyttökuva (130)](https://user-images.githubusercontent.com/118609353/214130480-7f0f19bc-cebe-4149-89af-aeb5c8329698.png)
+
+
+
+     
 
       
 
