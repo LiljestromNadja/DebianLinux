@@ -33,7 +33,9 @@ Tehtävä: Asenna komentoriviltä Micro-editori.
 
      micro newfile.md
      
-![Näyttökuva (118)](https://user-images.githubusercontent.com/118609353/214039817-fde5fec9-1957-4294-936b-e576d7d7e4ed.png)
+![Näyttökuva (118)](https://user-images.githubusercontent.com/118609353/214039817-fde5fec9-1957-4294-936b-e576d7d7e4ed.png) 
+     
+     ^Q poistumiseen
 
 <br></br>
 
@@ -89,6 +91,8 @@ Tehtävä: Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutaki
       nano newfile 
       
 ![Näyttökuva (103)](https://user-images.githubusercontent.com/118609353/213947372-58fa9cfb-49e2-4354-a879-0aebf1133c08.png)  
+
+     ^X poistumiseen
 
 <br></br>
 
