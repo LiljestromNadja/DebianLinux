@@ -30,6 +30,11 @@ Tehtävä: Asenna komentoriviltä Micro-editori.
       
       
 ![Näyttökuva (90)](https://user-images.githubusercontent.com/118609353/213944752-3e46584c-04f2-4b06-b868-ce1be98c5c9b.png)  
+
+     micro newfile.md
+     
+![Näyttökuva (118)](https://user-images.githubusercontent.com/118609353/214039817-fde5fec9-1957-4294-936b-e576d7d7e4ed.png)
+
 <br></br>
 
 ### Listaa koneesi rauta
@@ -37,22 +42,31 @@ Tehtävä: Rauta. Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize�
 
       apt-get install lshw
       
-![Näyttökuva (87)](https://user-images.githubusercontent.com/118609353/213945161-757920ba-d815-49f6-bf86-e476f0c150ba.png)
+![Näyttökuva (87)](https://user-images.githubusercontent.com/118609353/213945161-757920ba-d815-49f6-bf86-e476f0c150ba.png)  
+
+Annetaan käsky hieman painokkaammin:  
 
       sudo apt-get install lshw
 
-![Näyttökuva (88)](https://user-images.githubusercontent.com/118609353/213945254-2812e97e-357f-4c79-86b1-7cf53426ad6c.png)
+![Näyttökuva (88)](https://user-images.githubusercontent.com/118609353/213945254-2812e97e-357f-4c79-86b1-7cf53426ad6c.png)  
 
       sudo lshw -short sanitize
       
 ![Näyttökuva (89)](https://user-images.githubusercontent.com/118609353/213945332-0102753c-0b23-4363-a14e-4d5c75523103.png)  
+
+...ja muistetaan että jokaisella merkillä on merkitys:  
+     
+     sudo lshw -short -sanitize  
+     
+![Näyttökuva (117)](https://user-images.githubusercontent.com/118609353/214037645-97b15800-2bd6-4d38-a046-ca98cda1784c.png)
+
 
 <br></br>
 
 ### Kolmen komentoriviohjelman asentaminen
 Tehtävä: Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa. Ota ruutukaappaus. Kaikki terminaaliohjelmat kelpaavat, TUI (text user interface) ja CLI (command line interface). Osaatko tehdä apt-get komennon, joka asentaa nämä kolme ohjelmaa kerralla? 
 
-##### Cowsay
+##### Cowsay, tervehtivä lehmä
 
       sudo apt-get update
       sudo apt-get -y install cowsay
@@ -66,7 +80,7 @@ Tehtävä: Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutaki
 
 <br></br>
 
-##### Nano
+##### Nano-tekstieditori
 
       sudo apt-get -y install nano
       
@@ -78,7 +92,7 @@ Tehtävä: Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutaki
 
 <br></br>
 
-##### Asciijump
+##### Asciijump-mäkihyppypeli
 
       sudo apt-get update
       sudo apt-get install asciijump
