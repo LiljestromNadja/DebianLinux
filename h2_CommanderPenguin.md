@@ -21,6 +21,7 @@ Kolmen komentoriviohjelman asentaminen:
 -Asciijump  
 -Useamman ohjelman asentaminen samalla komennolla  
 Important directories  
+<!-- The Friendly M-->
 
 <br></br>
 
