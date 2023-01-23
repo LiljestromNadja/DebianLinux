@@ -2,7 +2,7 @@
 Installing Debian Linux on Virtualbox (Windows 10)
 
 
-## Linux Debianin asennus VirtualBoxilla virtuaalikoneeseen 
+## h1 Linux Debianin asennus VirtualBoxilla virtuaalikoneeseen 
 
 Tämä tehtävä osa Haaga-Helia ammattikorkeakoulun Linux-palvelimet -kurssia. Asensin onnistuneesti Linux Debianin VirtualBoxilla virtuaalikoneeseen näiden vaiheiden kautta. Käyttöjärjestelmänä Windows 10. 
 
