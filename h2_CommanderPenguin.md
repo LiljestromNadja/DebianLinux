@@ -15,11 +15,11 @@ Näiden harjoitusten avulla on tarkoitus saada näppituntumaa Linuxin komentoriv
 [The Friendly M](https://github.com/LiljestromNadja/DebianLinux/edit/main/h2_CommanderPenguin.md#the-friendly-m) --> 
 Micro -editorin asentaminen  
 Listaa koneesi rauta  
-Kolmen komentoriviohjelman asentaminen: 
--Cowsay
--Nano
--Asciijump
-Important directories
+Kolmen komentoriviohjelman asentaminen:  
+-Cowsay  
+-Nano  
+-Asciijump  
+Important directories  
 
 <br></br>
 
