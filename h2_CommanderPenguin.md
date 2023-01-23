@@ -93,18 +93,18 @@ Tehtävä: Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutaki
 ### Important Directories 
 Tehtävä: FHS. Esittele kansiot, jotka on listattu "Command Line Basics Revisited" kappaleessa "Important directories". Näytä kuvaava esimerkki kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Jos kyseessä on tiedosto, näytä siitä kuvaava esimerkkirivi. Työskentele komentokehotteessa ja näytä komennot, joilla etsit esimerkit.  
 
-/    Root Directory
+/ Root Directory  
 ![Näyttökuva (109)](https://user-images.githubusercontent.com/118609353/213950902-c3658e08-f11e-4fa9-9099-542150811d69.png)  
 /home/  
 ![Näyttökuva (110)](https://user-images.githubusercontent.com/118609353/213951050-fa9416e7-3c37-4deb-932b-cf358e06c75f.png)
 
-/home/nadja/
+/home/nadja/  
 ![Näyttökuva (111)](https://user-images.githubusercontent.com/118609353/213951165-5cf0a7e2-044f-4924-837b-0b81a3eb3aef.png)
 
-/etc/
+/etc/  
 ![Näyttökuva (112)](https://user-images.githubusercontent.com/118609353/213951439-dd134a08-09c7-4a7e-9fa1-edb8732f15ce.png)
 
-/media/
+/media/  
 ![Näyttökuva (113)](https://user-images.githubusercontent.com/118609353/213951578-dd073081-764a-484d-987e-e453a87ecdc2.png)
 
 /var/log/  
