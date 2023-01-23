@@ -19,6 +19,7 @@ Kolmen komentoriviohjelman asentaminen:
 -Cowsay  
 -Nano  
 -Asciijump  
+-Useamman ohjelman asentaminen samalla komennolla  
 Important directories  
 
 <br></br>
@@ -108,6 +109,24 @@ Tehtävä: Apt. Asenna kolme itsellesi uutta komentoriviohjelmaa. Kokeile kutaki
 ![Näyttökuva (105)](https://user-images.githubusercontent.com/118609353/213948533-10a9d5be-e014-4e22-9b72-e6299333245b.png)
 
 <br></br>
+
+##### Useamman ohjelman asentaminen samalla komennolla  
+
+Poistetaan ensin äskettäin asennettuja ohjelmia, annetaan komennot ja erotellaan ohjelmat välilyönnillä:  
+
+     sudo apt-get -y autoremove --purge asciijump nano micro  
+     
+
+![Näyttökuva (123)](https://user-images.githubusercontent.com/118609353/214051983-92a5f270-a4c5-4244-b199-f2e8507ce116.png)
+
+Tämän jälkeen asennus uudelleen:  
+
+     sudo apt-get -y install micro nano asciijump  
+
+![Näyttökuva (122)](https://user-images.githubusercontent.com/118609353/214052462-9ae4566f-4b29-4123-940a-c5c0289ac15b.png)
+
+<br></br>
+
 ### Important Directories 
 Tehtävä: FHS. Esittele kansiot, jotka on listattu "Command Line Basics Revisited" kappaleessa "Important directories". Näytä kuvaava esimerkki kunkin tärkeän kansion sisältämästä tiedostosta tai kansiosta. Jos kyseessä on tiedosto, näytä siitä kuvaava esimerkkirivi. Työskentele komentokehotteessa ja näytä komennot, joilla etsit esimerkit.  
 
