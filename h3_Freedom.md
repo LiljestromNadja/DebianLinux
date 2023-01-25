@@ -2,7 +2,7 @@
 
 Free Software Definition (FSF), Rise of Open Source, Grep and regular exprenssions, Pipe
 
-## h3Vapaus [(Kurssi: Linux-palvelimet 2023 alkukevät)](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
+## h3_Vapaus [(Kurssi: Linux-palvelimet 2023 alkukevät)](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
 
 ### Harjoitukset: 
 
