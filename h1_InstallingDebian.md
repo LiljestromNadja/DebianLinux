@@ -212,3 +212,14 @@ https://www.virtualbox.org/wiki/Downloads
 ![Näyttökuva (70)](https://user-images.githubusercontent.com/118609353/213286354-ac83a5d9-5b3d-40df-9e95-457657521cc3.png)
 ![Näyttökuva (72)](https://user-images.githubusercontent.com/118609353/213286355-6d1ba351-51cd-4035-b49f-f0220bdce9a3.png)
 
+### Updates and firewall (in Terminal)  
+
+    $ sudo apt-get update  
+    
+    $ sudo apt-get -y dist-upgrade  
+    
+    $ sudo apt-get -y install ufw  
+    
+    $ sudo ufw enable 
+
+
