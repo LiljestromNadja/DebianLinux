@@ -101,7 +101,6 @@ Sama toisella komennolla, nyt lehmä kertoo mitä "newfile.md" pitää sisällä
 ![Näyttökuva (133)](https://user-images.githubusercontent.com/118609353/214699583-fd17b64a-aa53-437b-9195-3a2128ebcd11.png)  
 
 
-*d) Vapaaehtoinen: Regex Crossword, tutorial.*  
 
 
 #### Lähteet ja materiaalit:  
