@@ -51,14 +51,14 @@ Versiotiedoissa näkyivät myös lisenssitiedot
 **Gnu General Public License (GPL) tärkeimmät oikeusvaikutukset:**  
 
 Gnu General Public License on vapaa copyleft-lisenssi ohjelmistoille ja muille teoksille.  
-Lisenssi antaa "vapaat kädet" käyttää ohjelmistoja ja ohjelmakoodia, noudattaen "Free Software" -periaatteita. Käyttäjällä on siis vapaus käyttää, tutkia, muokata ja levittää ohjelmistoa ja ohjelmistokoodia. Tämä vapaus siirtyy myös ohjelmiston mukana, eli kun ohjelmistoa tai ohjelmakoodia muokataan, lähdekoodin täytyy pysyä avoimena. Ohjelmistoa tai ohjelmakoodia saa käyttää myös kaupallisesti.[Wikipedia](https://en.wikipedia.org/wiki/GNU_General_Public_License)  
+Lisenssi antaa "vapaat kädet" käyttää ohjelmistoja ja ohjelmakoodia, noudattaen "Free Software" -periaatteita. Käyttäjällä on siis vapaus käyttää, tutkia, muokata ja levittää ohjelmistoa ja ohjelmistokoodia. Tämä vapaus siirtyy myös ohjelmiston mukana, eli kun ohjelmistoa tai ohjelmakoodia muokataan, lähdekoodin täytyy pysyä avoimena. Ohjelmistoa tai ohjelmakoodia saa käyttää myös kaupallisesti.[Wikipedia](https://en.wikipedia.org/wiki/GNU_General_Public_License), [gnu.org](https://www.gnu.org/licenses/gpl-3.0.html)  
 
 **MIT-lisenssi**  
 MIT-lisenssi eroaa Gnu General Public Licensestä (GPL) siinä, ettei se ole copyleft-lisenssi, eli  MIT-lisenssiä käytettäessä lähdekoodia ei ole pakko säilyttää avoimena kuten GNU GPL-lisenssissä. Muutoin oikeudet ovat samat, eli käyttäjä saa ajaa, tutkia ja muokata sekä levittää ohjelmistoa, kunhan lähdekoodista löytyy MIT-lisenssiteksti sekä tekijänoikeusmerkintä.[Wikipedia](https://en.wikipedia.org/wiki/MIT_License)  
 
 
 
-Lähde: https://www.gnu.org/licenses/gpl-3.0.html  
+ 
 
 
 
