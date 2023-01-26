@@ -44,14 +44,19 @@ Selvitin ohjelman version komennolla $ ohjelmanNimi --version:
   
 Versiotiedoissa näkyivät myös lisenssitiedot  
 
-**Micro:** Version 2.0.8. En löytänyt lisenssistä tietoa.
+**Micro:** Version 2.0.8. MIT-lisenssi. [Github, zyedidia](https://github.com/zyedidia/micro/blob/master/LICENSE)
 
-**Cowsay:** Version unknown. 	Artistic License / GNU General Public License, löytyi Googlailemalla. Vapaa lisenssi.
+**Cowsay:** Artistic License / GNU General Public License. Vapaa lisenssi. [Wikipedia](https://en.wikipedia.org/wiki/Cowsay)  
 
-**Gnu General Public License tärkeimmät oikeusvaikutukset:**  
+**Gnu General Public License (GPL) tärkeimmät oikeusvaikutukset:**  
 
 Gnu General Public License on vapaa copyleft-lisenssi ohjelmistoille ja muille teoksille.  
-Lisenssi antaa "vapaat kädet" käyttää ohjelmistoja ja ohjelmakoodia, noudattaen "Free Software" -periaatteita. Käyttäjällä on siis vapaus käyttää, tutkia, muokata ja levittää ohjelmistoa ja ohjelmistokoodia. Tämä vapaus siirtyy myös ohjelmiston mukana, eli kun ohjelmistoa tai ohjelmakoodia muokataan, lähdekoodin täytyy pysyä avoimena. Ohjelmistoa tai ohjelmakoodia saa käyttää myös kaupallisesti.  
+Lisenssi antaa "vapaat kädet" käyttää ohjelmistoja ja ohjelmakoodia, noudattaen "Free Software" -periaatteita. Käyttäjällä on siis vapaus käyttää, tutkia, muokata ja levittää ohjelmistoa ja ohjelmistokoodia. Tämä vapaus siirtyy myös ohjelmiston mukana, eli kun ohjelmistoa tai ohjelmakoodia muokataan, lähdekoodin täytyy pysyä avoimena. Ohjelmistoa tai ohjelmakoodia saa käyttää myös kaupallisesti.[Wikipedia](https://en.wikipedia.org/wiki/GNU_General_Public_License)  
+
+**MIT-lisenssi**  
+MIT-lisenssi eroaa Gnu General Public Licensestä (GPL) siinä, ettei se ole copyleft-lisenssi, eli  MIT-lisenssiä käytettäessä lähdekoodia ei ole pakko säilyttää avoimena kuten GNU GPL-lisenssissä. Muutoin oikeudet ovat samat, eli käyttäjä saa ajaa, tutkia ja muokata sekä levittää ohjelmistoa, kunhan lähdekoodista löytyy MIT-lisenssiteksti sekä tekijänoikeusmerkintä.[Wikipedia](https://en.wikipedia.org/wiki/MIT_License)  
+
+
 
 Lähde: https://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -105,7 +110,8 @@ Sama toisella komennolla, nyt lehmä kertoo mitä "newfile.md" pitää sisällä
 
 #### Lähteet ja materiaalit:  
 FSF: FSF Free Software Definition.https://www.gnu.org/philosophy/free-sw.html.  
-
 Välimäki 2005: Rise of Open Source: 5 Open Source Licenses as Alternative Governance Mechanisms: 5.1.1 - 5.1.4 (sivu 113 - 121).http://lib.tkk.fi/Diss/2005/isbn9529187793/isbn9529187793.pdf.  
-
-Karvinen, Tero. Linux Palvelimet 2023 alkukevät.https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/
+Karvinen, Tero. Linux Palvelimet 2023 alkukevät.https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/  
+Github: zyedidia, micro / LICENSE. https://github.com/zyedidia/micro/blob/master/LICENSE.  
+Wikipedia, MIT license. https://en.wikipedia.org/wiki/MIT_License.  
+Wikipedia, Cowsay. https://en.wikipedia.org/wiki/Cowsay.  
