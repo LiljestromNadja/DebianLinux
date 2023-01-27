@@ -1,4 +1,4 @@
-# Apache 2.4 palvelinohjelman asennus [(Linux-palvelimet alkukevät 2023)](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
+# Apache 2.4 palvelinohjelman asennus 
 
 Installing Apache HTTP Server Version 2.4
 
@@ -40,7 +40,9 @@ Localhost -sivu selaimessa:
 ![Näyttökuva (147) Apache8 localhost](https://user-images.githubusercontent.com/118609353/215133158-a5db380d-708f-440b-9131-dac91b14b6da.png)
 
     
-    
+<br></br>  
+<br></br>  
+
 ### Testailua   
 
 ![Näyttökuva (145) Apache 6 httpdeny](https://user-images.githubusercontent.com/118609353/215134817-f9dfaa1f-82f5-4f0d-94aa-570018b01323.png)
@@ -61,8 +63,11 @@ Tarkistetaan, onnistuiko tämä:
     
     
     
-    
-[Apache HTTP Server Project - Apache HTTP Server Version 2.4](https://httpd.apache.org/docs/2.4/)
+##### Materiaalia: 
+
+[Apache HTTP Server Project - Apache HTTP Server Version 2.4](https://httpd.apache.org/docs/2.4/)  
+
+Apachen asennusta käsitellään [Tero Karvisen Linux-palvelimet alkukevät 2023 -kurssilla](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
 
     
     
