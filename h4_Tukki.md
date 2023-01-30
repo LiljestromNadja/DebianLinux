@@ -47,6 +47,9 @@ Prosessin lopettaminen prosessi ID:llä (ID näkyy kun uusi prosessi luodaan tau
 
     sudo kill 12345  
     
+<br></br>
+<br></br>
+    
     
 ### Tehtävä: a) Tukki. Analysoi yksi esimerkkirivi kustakin näistä lokeista
 
@@ -91,6 +94,9 @@ Riviltä löytyvät tiedot:
 
 **/var/log/apache2/error.log - apachen omat virheet, 5xx server error**  
 
+<br></br>
+<br></br>
+
 ### Tehtävä: b) Aiheuta. Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki onnistuneesta ja yksi esimerkki epäonnistuneesta tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.  
 
 Aiheutin virheen antamalla virheellisen salasanan sudo-komentoa käytettäessä. Se tallentui kohteeseen: /var/log/auth.log.  
@@ -101,7 +107,8 @@ Sama onnistuneesti toteutettuna, annoin oikean salasanan:
 
 ![Näyttökuva (152)](https://user-images.githubusercontent.com/118609353/215366104-5361ffb2-3858-43e8-a6d7-20bd26f082cd.png)
 
-
+<br></br>
+<br></br>
 
     
     
