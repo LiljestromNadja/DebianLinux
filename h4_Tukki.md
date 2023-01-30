@@ -92,6 +92,16 @@ Riviltä löytyvät tiedot:
 
 ### Tehtävä: b) Aiheuta. Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki onnistuneesta ja yksi esimerkki epäonnistuneesta tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.  
 
+Aiheutin virheen antamalla virheellisen salasanan sudo-komentoa käytettäessä. Se tallentui kohteeseen: /var/log/auth.log.  
+
+![Näyttökuva (151)](https://user-images.githubusercontent.com/118609353/215365940-c8df16d4-efab-490b-90ce-f7a319f4c9ea.png)  
+
+Sama onnistuneesti toteutettuna, annoin oikean salasanan:  
+
+![Näyttökuva (152)](https://user-images.githubusercontent.com/118609353/215366104-5361ffb2-3858-43e8-a6d7-20bd26f082cd.png)
+
+
+
     
     
     
