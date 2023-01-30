@@ -52,9 +52,10 @@ Prosessin lopettaminen prosessi ID:llä (ID näkyy kun uusi prosessi luodaan tau
 
 #### /var/log/syslog - yleisloki, tänne kaikki joilla ei ole omaa lokia  
 
-![Näyttökuva (150)](https://user-images.githubusercontent.com/118609353/215365164-8ed5a4c1-ae17-45d0-aa6a-33b453f7aab8.png)
+![Näyttökuva (150)](https://user-images.githubusercontent.com/118609353/215366463-41253c39-68b5-473e-85ac-0593f806257f.png)  
 
-Tähän on kirjattu Apachen käynnistys. 
+Tähän on kirjattu Apachen käynnistys.  
+
 #### /var/log/auth.log - kirjatumiset, sudo:n käyttö  
 
 ![Näyttökuva (149)](https://user-images.githubusercontent.com/118609353/215364632-6164cef1-1851-4b64-9bdd-1845f43f2197.png)  
