@@ -139,7 +139,7 @@ Poistaminen:
 <br></br>
 # Apache2 asennuksen poistaminen  
 
-        $ sudo apt-get purge aoache2 apache2-bin  
+        $ sudo apt-get purge apache2 apache2-bin  
         $ sudo systemctl stop apache2
 
 
