@@ -60,6 +60,8 @@ Tarkistetaan, onnistuiko tämä:
     sudo ufw deny http
     sudo ufw status
 
+<br></br>
+<br></br>
 # Käyttöönotto  
 
 Linux-palvelimet tunnilla 31.01.2023.  
