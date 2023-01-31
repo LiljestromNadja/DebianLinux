@@ -60,9 +60,66 @@ Tarkistetaan, onnistuiko tämä:
     sudo ufw deny http
     sudo ufw status
 
+# Käyttöönotto  
+
+Linux-palvelimet tunnilla 31.01.2023.  
+
+
+Kun Apache2 on asennettu, käynnistetään se:  
+
+      $ sudo systemctl start apache2  
+      
+Tarkistetaan:  
+
+      $ sudo service apache2 status  
+      
+
+ ![Näyttökuva (154)](https://user-images.githubusercontent.com/118609353/215799847-d3cf079f-d43d-4526-b8f4-b5223b600a41.png)
+
+Siirrytään kotihakemistoon:   
+
+        $ cd  
+        
+        $ pwd
     
-    
-    
+![Näyttökuva (155)](https://user-images.githubusercontent.com/118609353/215800969-dbd7bec1-cbe1-48a1-8ce0-8fbfe10cf6af.png)  
+
+        $ echo "Moi"|sudo tee /var/www/html/index.html
+        
+ Testataan:  
+  
+        $ curl 'http://localhost/~nadja'  
+        
+Annetaan komento "a2enmod userdir" ja käynnistetään Apache2 uudelleen:  
+
+        $ sudo a2enmod userdir  
+        
+        $ sudo systemctl restart apache2
+        
+Ja hakemisto, missä tällä hetkellä ollaan on siis kotihakemisto, /home/nadja. 
+
+        $ mkdir public_html
+        $ cd public_html
+        $ ls
+        $ micro index.html
+        $ nano toinensivu.html
+        
+        $ curl 'http://localhost/~nadja' 
+        
+        
+        
+Katsotaan vielä Mozilla Firefoxilla, toimiiko.  
+http://localhost/~nadja (index.html)  
+http://localhost/~nadja/toinensivu (toinensivu.html)  
+
+![Näyttökuva (156)](https://user-images.githubusercontent.com/118609353/215804575-7d51bc69-6c4b-4a22-92b0-9926adda6716.png)
+
+
+Bonus: 
+
+        $ sudo adduser debbie01
+
+
 ##### Materiaalia: 
 
 [Apache HTTP Server Project - Apache HTTP Server Version 2.4](https://httpd.apache.org/docs/2.4/)  
