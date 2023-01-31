@@ -117,9 +117,32 @@ http://localhost/~nadja/toinensivu (toinensivu.html)
 ![Näyttökuva (156)](https://user-images.githubusercontent.com/118609353/215804575-7d51bc69-6c4b-4a22-92b0-9926adda6716.png)
 
 
-Bonus: 
+Bonus, lisätään testikäyttäjä: 
 
-        $ sudo adduser debbie01
+        $ sudo adduser debbie01  
+        
+Käyttäjänhallintakomennot:  
+
+Lisääminen:  
+
+        $ sudo adduser userAbc
+        
+Poistaminen:  
+        
+        $ sudo deluser userAbc
+        
+ 
+ 
+ 
+ 
+<br></br>
+<br></br>
+# Apache2 asennuksen poistaminen  
+
+        $ sudo apt-get purge aoache2 apache2-bin  
+        $ sudo systemctl stop apache2
+
+
 
 
 ##### Materiaalia: 
