@@ -9,6 +9,8 @@ b) Laita käyttäjien kotisivut (http://example.com/~tero) toimimaan. Testaa esi
 c) Tee uusi käyttäjä. Kirjaudu ulos omastasi ja sisään uutena käyttäjänä. Tee uudellekin käyttäjälle kotisivu.  
 d) Tee validi HTML5 sivu.
 
+https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md#k%C3%A4ytt%C3%B6%C3%B6notto
+
 ## Tehtävät  
 
 ### a) Vaihda Apachen esimerkkisivu johonkin lyheen sivuun niin, että vanha esimerkkisivu ei näy. (Tämä lienee ainoa kohta, jossa ikinä muokkaat weppisivua pääkäyttäjän oikeuksin. /var/www/html/index.html)  
