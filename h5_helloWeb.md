@@ -110,6 +110,8 @@ Syötin index.html -sivun [Validate by Direct Input](https://validator.w3.org/#v
 
 [Karvinen, Tero. Short HTML-page.](https://terokarvinen.com/2012/short-html5-page/)  
 
+[Indie Hackers | #266 – Lessons Learned Building a $37k/mo Business in 2.5 Years with Mat De Sousa of WideBundle](https://share.transistor.fm/s/940ae75e)  
+
 [Tunnilla 31.01.2023.](https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md#k%C3%A4ytt%C3%B6%C3%B6notto)
 
 
