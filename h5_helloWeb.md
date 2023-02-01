@@ -16,7 +16,7 @@ d) Tee validi HTML5 sivu.
 
 ### x) Kuuntele ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)Indie Hackers -podcast, vapaavalintainen jakso, jossa hyödynnetään weppiä kaupallisesti.  
 
-**Kuunneltu podcast: Indie Hackers | #266 – Lessons Learned Building a $37k/mo Business in 2.5 Years with Mat De Sousa of WideBundle.**  
+Kuunneltu podcast: **Indie Hackers | #266 – Lessons Learned Building a $37k/mo Business in 2.5 Years with Mat De Sousa of WideBundle.**  
 
 Jakson kuvaus: Mat De Sousa (@DsMatie) talks having million-dollar ambitions as a child, learning from numerous failed startups, why Shopify apps are great for indie hackers, the proper way to find a business idea, and growing from $0 to $37k/mo in 2.5 years with Courtland (@csallen) and Channing (@ChanningAllen). [Lähde](https://share.transistor.fm/s/940ae75e)  
 
