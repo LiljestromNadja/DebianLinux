@@ -9,7 +9,7 @@ b) Laita käyttäjien kotisivut (http://example.com/~tero) toimimaan. Testaa esi
 c) Tee uusi käyttäjä. Kirjaudu ulos omastasi ja sisään uutena käyttäjänä. Tee uudellekin käyttäjälle kotisivu.  
 d) Tee validi HTML5 sivu.
 
-https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md#k%C3%A4ytt%C3%B6%C3%B6notto
+
 
 ## Tehtävät  
 
@@ -108,7 +108,9 @@ Syötin index.html -sivun [Validate by Direct Input](https://validator.w3.org/#v
   
 [Linux-palvelimet alkukevät 2023](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)  
 
-[Karvinen, Tero. Short HTML-page.](https://terokarvinen.com/2012/short-html5-page/)
+[Karvinen, Tero. Short HTML-page.](https://terokarvinen.com/2012/short-html5-page/)  
+
+[Tunnilla 31.01.2023.](https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md#k%C3%A4ytt%C3%B6%C3%B6notto)
 
 
 
