@@ -90,7 +90,10 @@ Siirrytään kotihakemistoon:
         
  Testataan:  
   
-        $ curl 'http://localhost/~nadja'  
+        $ curl 'http://localhost'  
+        
+![Näyttökuva (168) localhostRootIndexHtml](https://user-images.githubusercontent.com/118609353/216348596-c5d6c01f-8bc8-4a60-94bd-5bcf985e2442.png)
+
         
 Annetaan komento "a2enmod userdir" ja käynnistetään Apache2 uudelleen:  
 
