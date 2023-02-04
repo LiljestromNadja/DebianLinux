@@ -81,6 +81,10 @@ Käyttäjän vaihtaminen:
 
 ![Näyttökuva (162) kayttajan vaihtaminen](https://user-images.githubusercontent.com/118609353/216156876-bd6e0b44-57a2-4903-b4a5-95c2ee9d7f69.png)  
 
+Käyttäjää voi toki vaihtaa komentoriviltäkin:  
+
+        su kayttajaNimi
+
 Uusi käyttäjä:  
 
 ![Näyttökuva (163) testuser debbie](https://user-images.githubusercontent.com/118609353/216157104-02b75b5a-575d-4adf-8758-89221ba206b9.png)  
