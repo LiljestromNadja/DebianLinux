@@ -7,6 +7,7 @@ Linux Server Course - Linux Palvelimet 2023 alkukevät
 ### [h3_Freedom ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h3_Freedom.md)  
 ### [h4_Tukki ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h4_Tukki.md)  
 ### [h5_helloWeb ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h5_helloWeb.md)  
+### [h6_Based ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h6_Based.md)  
 <br></br>
 
 #### [- Installing Apache2 ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md)
