@@ -124,7 +124,7 @@ Käynnistän Apachen uudelleen:
 ![Näyttökuva (184) apache kaynnistetty uudelleen joku error](https://user-images.githubusercontent.com/118609353/216848959-b6d0e8c2-112e-4f44-a73a-128e682ae623.png)  
 
 
-Käydään kurkkaamassa  /etc/apache/apache2.conf
+Käydään kurkkaamassa  /etc/apache/apache2.conf ja samalla aiheutetaan virhe:
 
         nadja@debbiedebian:/etc/apache2$ sudo nano apache2.conf  
         
