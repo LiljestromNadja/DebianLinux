@@ -162,7 +162,9 @@ Lähdetään palauttamaan:
 
         #DefaultRuntimeDir ${APACHE_RUN_DIR}
         ->
-        DefaultRuntimeDir ${APACHE_RUN_DIR}
+        DefaultRuntimeDir ${APACHE_RUN_DIR}  
+        
+![Näyttökuva (180) korjataan virhe otetaan kommenttimerkintä poist](https://user-images.githubusercontent.com/118609353/216849456-959ca8fd-e3c2-4a06-a711-5939fb7e00b3.png)
 
 Tallennetaan. (18.5jotain)  
 
@@ -175,7 +177,7 @@ Ei näy kuin edellinen 18.47 error. Käynnistetäään siis Apache uudelleen:
         sudo tail -5 /var/log/apache2/error.log | grep '/usr/sbin/apache2' --color  
         
 
-![Näyttökuva (180) korjataan virhe otetaan kommenttimerkintä poist](https://user-images.githubusercontent.com/118609353/216849456-959ca8fd-e3c2-4a06-a711-5939fb7e00b3.png)
+
 
 ![Näyttökuva (181) aiheuttamani errorit korjattu](https://user-images.githubusercontent.com/118609353/216849486-605d0455-7850-4fa8-acbc-afedc6d33d50.png)  
 
