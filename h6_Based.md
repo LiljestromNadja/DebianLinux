@@ -188,7 +188,7 @@ Käynnistettään apache taas uudestaan 19.11 ja 19.12.
         
 ![Näyttökuva (182) käynnistin apachen 2 kertaa uusiks sama ilmoitus tuli](https://user-images.githubusercontent.com/118609353/216849678-7d07eb54-6eb2-4f55-8567-4ae03e3fc61c.png)
 
-Tämä error kirjataan Apachen uudelleenkäynnistyksen yhteydessä. "Config variable ${APACHE_RUN_DIR} is not defined", liittynee jonkin ajonaikaisen hakemiston määrittelyyn. 
+Tämä error siis kirjataan Apachen uudelleenkäynnistyksen yhteydessä. "Config variable ${APACHE_RUN_DIR} is not defined", liittynee jonkin ajonaikaisen hakemiston määrittelyyn. 
 "The directory where shm and other runtime files will be stored."
 
 
