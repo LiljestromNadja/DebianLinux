@@ -27,8 +27,9 @@ Tehtävää varten rekisteröidyin [GitHub Education](https://education.github.c
 
 
 ### a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta. (Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla vagran:tia paikallisesti).  
-Palveluntarjoaja: Digital Ocean  
-Droplet:  
+
+**Palveluntarjoaja:** Digital Ocean  
+**Droplet:**  
 
 Create -> Droplets(Create cloud servers)  
 
