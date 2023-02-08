@@ -110,13 +110,16 @@ Sitten päivitykset ja "tulimuuri":
 
     root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo apt-get install ufw  
 
-"Rei'itetään" ennen palomuurin päällekytkemistä:   
+"Rei'itetään" ennen palomuurin päällekytkemistä:  
+
     root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo ufw allow 22/tcp  
 
 Laitetaan muuri päälle:   
+
     root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo ufw enable  
 
 Proceed with operation?  
+
     root@debian-s-1vcpu-1gb-amd-fra1-01:~# y  
 
 ![Näyttökuva (202) palomuuri päivitetty](https://user-images.githubusercontent.com/118609353/217606963-acab489d-1d38-43d2-b2f2-01122a333063.png)  
