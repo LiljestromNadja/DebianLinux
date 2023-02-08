@@ -96,6 +96,7 @@ Käynnissä on. Eli jatkoin siitä mihin jäätiin:
     nadja@debbiedebian:~$ ssh root@165.227.131.128  
 
 Are you sure you want to continue connecting?  
+
     nadja@debbiedebian:~$ yes  
 
 Seuraavaksi salasana, jonka määrittelin luodessani dropletia.   
