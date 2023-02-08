@@ -1,0 +1,185 @@
+# h6_Real_Internet(tm)
+
+**Tehtävänanto**  
+x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli.  
+(Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)  
+[Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)    
+a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta.  
+(Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla vagran:tia paikallisesti).  
+b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnus kiinni, ohjelmien päivitys.  
+c) Asenna weppipalvelin omalle virtuaalipalvelimellesi. Korvaa testisivu. Kokeile, että se näkyy julkisesti. (Muista tehdä reikä tulimuuriin).  
+d) Etsi merkkejä murtautumisyrityksistä.  
+
+**Vinkit:**  
+
+Aina hyvät salasanat  
+sudo ufw allow 22/tcp; sudo ufw allow 80/tcp  
+Wannabe-murtautujia voit löytää lokeista, /var/log/auth.log, joskus myös /var/log/apache2/access.log  
+Nykyisin demonin uudelleenkäynnistys 'sudo systemctl restart apache2' (ei enää service)  
+[Lähde](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)   
+
+## Virtuaalipalvelin palveluntarjoajalta  
+
+Tehtävää varten rekisteröidyin [GitHub Education](https://education.github.com/) -käyttäjäksi. Valitsin palveluntarjoajaksi [Digital Oceanin](https://cloud.digitalocean.com).
+
+
+### x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. (Tässä alakohdassa ei tarvitse tehdä testejä tietokoneella)
+[Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)    
+
+
+### a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta. (Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla vagran:tia paikallisesti).  
+Palveluntarjoaja: Digital Ocean  
+Droplet:  
+
+Create -> Droplets(Create cloud servers)  
+
+Choose Region -> Frankfurt  
+
+Choose an image -> Debian
+
+Version -> 11 x64  
+
+Droplet Type -> SHARED CPU, Basic
+
+CPU options -> Regular(Disk type:SSD)  
+
+$6/mo
+1GB/ 1CPU
+25 GB SSD Disk
+1000GB transfer
+
+Choose Authentication Method -> Password(SSH recommended)  
+
+Create Droplet ->  
+
+![Näyttökuva (205) dropleetin luominen](https://user-images.githubusercontent.com/118609353/217606297-bee6a400-84ec-4c41-9bab-b21dad04b790.png)  
+
+
+
+### b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnus kiinni, ohjelmien päivitys.  
+
+Komentoriville mars:  
+
+    nadja@debbiedebian:~$ ssh root@PIv4osoite eli ->  
+
+    nadja@debbiedebian:~$ ssh root@165.227.131.128  
+
+Ja tietenkin, kurssilla muutamaan otteeseen kuultu lausahdus "Kun tietokoneet ei koskaan toimi", 
+toteutui. 
+
+![Näyttökuva (198) ssh command not found](https://user-images.githubusercontent.com/118609353/217606364-9207a014-01ae-4666-8991-7539bde33dbb.png)  
+
+Ihan ensimmäiseksi kokeilin asentaa päivitykset. Ei vaikutusta.  
+
+
+    nadja@debbiedebian:~$ sudo apt-get update  
+
+    nadja@debbiedebian:~$ sudo apt-get -y dist-upgrade  
+
+
+Hyvän tovin pyöriskelin netissä etsimässä ratkaisua , muun muassa [täältä.](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)  
+
+
+Youtubesta löytyi ratkaisu:  
+[Failed to start ssh service Unit ssh.service could not be found Ubuntu](https://www.youtube.com/watch?v=95ssd2a2Re0)  
+
+Ei kun kokeilemaan:   
+
+    nadja@debbiedebian:~$ sudo apt-get install openssh-server  
+
+    nadja@debbiedebian:~$ sudo systemctl start ssh  
+    nadja@debbiedebian:~$ sudo systemctl status ssh  
+
+![Näyttökuva (199) ssh status toimii jee](https://user-images.githubusercontent.com/118609353/217606613-15300262-5da5-4cf4-947b-703244fb8d7c.png)  
+
+Käynnissä on. Eli jatkoin siitä mihin jäätiin:   
+
+    nadja@debbiedebian:~$ ssh root@165.227.131.128  
+
+Are you sure you want to continue connecting?  
+    nadja@debbiedebian:~$ yes  
+
+Seuraavaksi salasana, jonka määrittelin luodessani dropletia.   
+
+![Näyttökuva (201) debianin rootissa](https://user-images.githubusercontent.com/118609353/217606721-47986bc3-957a-42e0-9fe0-36629fc4ef99.png)  
+
+Sitten päivitykset ja "tulimuuri":  
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo apt-get update 
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo apt-get -y dist-upgrade
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo apt-get install ufw  
+
+"Rei'itetään" ennen palomuurin päällekytkemistä:   
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo ufw allow 22/tcp  
+
+Laitetaan muuri päälle:   
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo ufw enable  
+
+Proceed with operation?  
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# y  
+
+![Näyttökuva (202) palomuuri päivitetty](https://user-images.githubusercontent.com/118609353/217606963-acab489d-1d38-43d2-b2f2-01122a333063.png)  
+
+
+### c) Asenna weppipalvelin omalle virtuaalipalvelimellesi. Korvaa testisivu. Kokeile, että se näkyy julkisesti. (Muista tehdä reikä tulimuuriin).  
+
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# hostname -I   
+
+Sitten Apache2:  
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo apt-get install apache2  
+
+Käynnistetään:  
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo systemctl start apache2  
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo service apache2 status  
+
+Muokataan "etusivu":  
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# echo moi | sudo tee /var/www/html/index.html
+
+
+![Näyttökuva (203) uusi curl localhost](https://user-images.githubusercontent.com/118609353/217607192-b06f8135-cf25-4716-9b2e-c058bef5d843.png)  
+
+
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo ufw allow 80/tcp  
+    
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~#sudo systemctl restart apache2  
+
+Netissä ollaan!  
+
+![Näyttökuva (204) netissä ollaan](https://user-images.githubusercontent.com/118609353/217607293-e5839a16-533a-41e6-a5ce-d2c8d4aab236.png)  
+
+
+Tämän jälkeen "tuhosin" äskeisen Dropletin, jolloin terminaalissa
+siirryin "omalle koneelle" (nadja@debbiedebian).  
+
+### d) Etsi merkkejä murtautumisyrityksistä.  
+
+
+
+<!---
+**VIELÄ KESKEN**  
+
+**tiivistelmä**
+
+**tee vielä ssh-avaimen kanssa**
+lukitse root
+
+**murtautumisyritykset**
+<br></br> 
+
+-->
+#### Lähteet  
+  
+[Linux-palvelimet alkukevät 2023](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
+
+
+
+
+
+
+
+
