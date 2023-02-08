@@ -160,6 +160,79 @@ Netissä ollaan!
 Tämän jälkeen "tuhosin" äskeisen Dropletin, jolloin terminaalissa
 siirryin "omalle koneelle" (nadja@debbiedebian).  
 
+#### SSH-avain (omalla virtuaalikoneella)  
+
+        nadja@debbiedebian:~$ ssh-key ja tabia perään
+
+        nadja@debbiedebian:~$ ssh-keygen
+
+Enterillä eteenpäin. En luonut tällä kertaa passphrasea, joten jatkoin enterillä.  
+
+        nadja@debbiedebian:~$ cd .ssh
+        nadja@debbiedebian:~/.ssh$ ls
+        
+        nadja@debbiedebian:~$ micro id_rsa.pub
+
+Kopioin koko pitkä pätkän (microssa CTRL+C) ja liitin se SSH Public Key -kenttään luodessani uuden Dropletin.  
+
+Sitten taas omaan terminaaliin:  
+
+        nadja@debbiedebian:~/.ssh$ ssh root@164.92.170.157  
+
+Are you sure you want to continue connecting?  
+
+        nadja@debbiedebian:~/.ssh$ yes
+
+Nyt ei tarvitse siis kirjoittaa salasanaa, koska sellaista ei luotu. Jos salasanan käytön haluaa lukita ssh-avainta käytettäessä (ole tässä tapauksessa varma, että käytät ssh-avainta, sillä jos käytössä on vain salasana, lukitset itsesi ulos):
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# usermod --lock root
+        root@debian-s-1vcpu-1gb-fra1-01:~# exit  
+
+Testaillaan vielä:  
+
+        nadja@debbiedebian:~/.ssh$ ssh root@164.92.170.157
+
+![Näyttökuva (207) sshkeytoimiirootlukittu](https://user-images.githubusercontent.com/118609353/217667745-e6654d35-1c0b-4ae9-8139-a6c2df196914.png)
+
+Koska kaikki meni niin kuin pitikin, muistin virkistämiseksi päivitykset ja tulimuurit kohdilleen: 
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo apt-get update  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo apt-get -y dist-upgrade  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo apt-get install ufw   
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo ufw allow 22/tcp  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo ufw enable  
+
+Proceed with operation? 
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# y  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# hostname -I (voi tarkistaa että on oikea)  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo apt-get install apache2  
+
+Do you want to continue?
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# y  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo systemctl start apache2  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo service apache2 status  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# echo moi | sudo tee /var/www/html/index.html  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# curl localhost  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo ufw allow 80/tcp  
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# sudo systemctl restart apache2
+
+![Näyttökuva (208) helloThere](https://user-images.githubusercontent.com/118609353/217668104-94ec91b5-dc63-427f-9392-b9a4091b53cc.png)
+
+
 ### d) Etsi merkkejä murtautumisyrityksistä.  
 
 
@@ -169,8 +242,6 @@ siirryin "omalle koneelle" (nadja@debbiedebian).
 
 **tiivistelmä**
 
-**tee vielä ssh-avaimen kanssa**
-lukitse root
 
 **murtautumisyritykset**
 <br></br> 
