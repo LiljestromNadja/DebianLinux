@@ -141,7 +141,8 @@ Käynnistetään:
 
 Muokataan "etusivu":  
 
-    root@debian-s-1vcpu-1gb-amd-fra1-01:~# echo helloWeb | sudo tee /var/www/html/index.html
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# echo moi | sudo tee /var/www/html/index.html  
+    root@debian-s-1vcpu-1gb-amd-fra1-01:~# echo helloWeb | sudo tee /var/www/html/index.html  
 
 
 ![Näyttökuva (203) uusi curl localhost](https://user-images.githubusercontent.com/118609353/217607192-b06f8135-cf25-4716-9b2e-c058bef5d843.png)  
