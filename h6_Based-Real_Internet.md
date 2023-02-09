@@ -294,6 +294,8 @@ Etsin tiedostosta kohdan 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLog
 Also changed my password with  
 
         $ passwd
+        
+:sweat_smile:
 
 
 
