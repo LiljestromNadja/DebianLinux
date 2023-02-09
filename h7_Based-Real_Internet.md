@@ -268,16 +268,22 @@ Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen
 
 
 ---
-### d) Etsi merkkejä murtautumisyrityksistä.  
+### d) Etsi merkkejä murtautumisyrityksistä.   
+Testailin itse virheellisiä kirjautumisyrityksiä, yrittämällä kirjautua lukittuun rootiin, kirjautumista väärällä salasanalla sekä olemattomalla käyttäjätunnuksella:   
+
+![Näyttökuva (211) väärät kirjautumiset ja auth log](https://user-images.githubusercontent.com/118609353/217877814-d64acb82-1392-4704-ad05-13ad9fb389d8.png)
+
+Lukittuun rootiin oli toki muitakin pyrkijöitä:  
+
+
+![Näyttökuva (213) osaa ne muutkit](https://user-images.githubusercontent.com/118609353/217878026-e755ec84-0768-4cbd-9756-8f42ee2bee99.png)
+
+![Näyttökuva (213) ihmeip pieni](https://user-images.githubusercontent.com/118609353/217879226-30f99634-5923-4617-b86e-312ef210c0cc.png)  
 
 
 
 <!---
-**VIELÄ KESKEN**  
-
-**murtautumisyritykset**
-
-<br></br> 
+d-osio oli vähän myöhässä palautettu
 
 -->
 
