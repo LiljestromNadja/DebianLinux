@@ -23,7 +23,20 @@ Nykyisin demonin uudelleenkäynnistys 'sudo systemctl restart apache2' (ei enä�
 Tehtävää varten rekisteröidyin [GitHub Education](https://education.github.com/) -käyttäjäksi. Valitsin palveluntarjoajaksi [Digital Oceanin](https://cloud.digitalocean.com).
 
 ## Tehtävät  
-### x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. [Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)    
+### x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. [Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)  
+
+First steps on a new Virtual Privare server: 
+
+0. "Always use good passwords. Only good passwords. Good passwords every moment."  
+1. Create a new virtual server on the service provider's site.
+2. Log in for the first time: '$ ssh root@exampleIPv4'
+3. Firewall. Before enabling, remember to make a hole for SSH.
+4. Add different type of users with different type of privileges.
+5. Close root account. '$ Usermod --lock root' just locks the password, not every way to use the user.
+6. Start using it. Remember ‘$ sudo ufw allow 80/tcp’ when you install a public server such as Apache.
+7. Get Public DNS Name.
+
+
 
 
 ### a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta. (Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla vagran:tia paikallisesti).  
@@ -233,6 +246,14 @@ Do you want to continue?
 
 ![Näyttökuva (208) helloThere](https://user-images.githubusercontent.com/118609353/217668104-94ec91b5-dc63-427f-9392-b9a4091b53cc.png)
 
+#### Root kiinni  
+
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
+    
+Etsin tiedostosta kohdan 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
+
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
+
 
 ### d) Etsi merkkejä murtautumisyrityksistä.  
 
@@ -241,10 +262,8 @@ Do you want to continue?
 <!---
 **VIELÄ KESKEN**  
 
-**tiivistelmä**
-
-
 **murtautumisyritykset**
+
 <br></br> 
 
 -->
