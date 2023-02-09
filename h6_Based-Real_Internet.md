@@ -25,7 +25,7 @@ Tehtävää varten rekisteröidyin [GitHub Education](https://education.github.c
 ## Tehtävät  
 ### x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. [Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)  
 
-First steps on a new Virtual Privare server: 
+First steps on a new Virtual Private server: 
 
 0. "Always use good passwords. Only good passwords. Good passwords every moment."  
 1. Create a new virtual server on the service provider's site.
@@ -267,6 +267,11 @@ Etsin tiedostosta kohdan 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLog
 <br></br> 
 
 -->
+
+Also changed my password with  
+
+        $ passwd
+
 #### Lähteet  
   
 [Linux-palvelimet alkukevät 2023](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
