@@ -183,6 +183,29 @@ siirryin "omalle koneelle" (nadja@debbiedebian).
 
 ---
 
+#### Käyttäjien lisääminen
+Lisäsin käyttäjät sudo-oikeuksilla(snotroot) ja ilman(notroot):  
+
+        sudo adduser notroot
+        sudo adduser snotroot
+        sudo adduser snotroot sudo
+
+
+
+---
+
+#### Root kiinni  
+
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
+    
+Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
+
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
+    
+![Näyttökuva (209) rootLoginNo](https://user-images.githubusercontent.com/118609353/217683021-b324c22c-1b79-4184-ad9d-773aba584bf2.png)
+
+---
+
 #### SSH-avain (omalla virtuaalikoneella)  
 
         nadja@debbiedebian:~$ ssh-key ja tabia perään
@@ -254,17 +277,6 @@ Koska kaikki meni niin kuin pitikin, muistin virkistämiseksi päivitykset ja tu
         root@debian-s-1vcpu-1gb-fra1-01:~# sudo systemctl restart apache2
 
 ![Näyttökuva (208) helloThere](https://user-images.githubusercontent.com/118609353/217668104-94ec91b5-dc63-427f-9392-b9a4091b53cc.png)
-
----
-#### Root kiinni  
-
-    root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
-    
-Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
-
-    root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
-    
-![Näyttökuva (209) rootLoginNo](https://user-images.githubusercontent.com/118609353/217683021-b324c22c-1b79-4184-ad9d-773aba584bf2.png)
 
 
 ---
