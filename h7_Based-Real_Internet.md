@@ -225,7 +225,7 @@ Sitten taas omaan terminaaliin:
 
         nadja@debbiedebian:~/.ssh$ ssh root@164.92.170.157  
 
-Are you sure you want to continue connecting?  
+        Are you sure you want to continue connecting?  
 
         nadja@debbiedebian:~/.ssh$ yes
 
