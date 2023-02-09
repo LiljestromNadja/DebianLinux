@@ -1,4 +1,4 @@
-# h6_Based-Real_Internet(tm)
+# h7_Based-Real_Internet(tm)
 
 **Tehtävänanto**  
 x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli.  
