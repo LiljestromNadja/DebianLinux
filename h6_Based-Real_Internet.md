@@ -259,7 +259,7 @@ Koska kaikki meni niin kuin pitikin, muistin virkistämiseksi päivitykset ja tu
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
     
-Etsin tiedostosta kohdan 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
+Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
     
