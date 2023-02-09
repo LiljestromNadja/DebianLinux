@@ -36,8 +36,9 @@ First steps on a new Virtual Private server:
 3. Firewall. Before enabling, remember to make a hole for SSH.
 4. Add different type of users with different type of privileges.
 5. Close root account. '$ Usermod --lock root' just locks the password, not every way to use the user.
-6. Start using it. Remember ‘$ sudo ufw allow 80/tcp’ when you install a public server such as Apache.
-7. Get Public DNS Name.
+6. Upgrade software. 
+7. Start using it. Remember ‘$ sudo ufw allow 80/tcp’ when you install a public server such as Apache.
+8. Get Public DNS Name.
 
 
 
