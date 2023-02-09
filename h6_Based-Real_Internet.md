@@ -18,11 +18,14 @@ Wannabe-murtautujia voit löytää lokeista, /var/log/auth.log, joskus myös /va
 Nykyisin demonin uudelleenkäynnistys 'sudo systemctl restart apache2' (ei enää service)  
 [Lähde](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)   
 
+---
 ## Virtuaalipalvelin palveluntarjoajalta  
 
-Tehtävää varten rekisteröidyin [GitHub Education](https://education.github.com/) -käyttäjäksi. Valitsin palveluntarjoajaksi [Digital Oceanin](https://cloud.digitalocean.com).
+Tehtävää varten rekisteröidyin [GitHub Education](https://education.github.com/) -käyttäjäksi. Valitsin palveluntarjoajaksi [Digital Oceanin](https://cloud.digitalocean.com).  
 
+---
 ## Tehtävät  
+
 ### x) Lue ja tiivistä. Tiivistelmäksi riittää muutama ranskalainen viiva per artikkeli. [Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)  
 
 First steps on a new Virtual Private server: 
@@ -38,6 +41,7 @@ First steps on a new Virtual Private server:
 
 
 
+---
 
 ### a) Vuokraa oma virtuaalipalvelin haluamaltasi palveluntarjoajalta. (Vaihtoehtona voit käyttää ilmaista kokeilujaksoa, GitHub Education krediittejä; tai jos mikään muu ei onnistu, voit kokeilla vagran:tia paikallisesti).  
 
@@ -68,6 +72,7 @@ Create Droplet ->
 ![Näyttökuva (205) dropleetin luominen](https://user-images.githubusercontent.com/118609353/217606297-bee6a400-84ec-4c41-9bab-b21dad04b790.png)  
 
 
+---
 
 ### b) Tee alkutoimet omalla virtuaalipalvelimellasi: tulimuuri päälle, root-tunnus kiinni, ohjelmien päivitys.  
 
@@ -90,7 +95,7 @@ Ihan ensimmäiseksi kokeilin asentaa päivitykset. Ei vaikutusta.
     nadja@debbiedebian:~$ sudo apt-get -y dist-upgrade  
 
 
-Hyvän tovin pyöriskelin netissä etsimässä ratkaisua , muun muassa [täältä.](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)  
+Hyvän tovin pyöriskelin netissä etsimässä ratkaisua, muun muassa [täältä.](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)  
 
 
 Youtubesta löytyi ratkaisu:  
@@ -138,6 +143,7 @@ Proceed with operation?
 
 ![Näyttökuva (202) palomuuri päivitetty](https://user-images.githubusercontent.com/118609353/217606963-acab489d-1d38-43d2-b2f2-01122a333063.png)  
 
+---
 
 ### c) Asenna weppipalvelin omalle virtuaalipalvelimellesi. Korvaa testisivu. Kokeile, että se näkyy julkisesti. (Muista tehdä reikä tulimuuriin).  
 
@@ -173,6 +179,8 @@ Netissä ollaan!
 
 Tämän jälkeen "tuhosin" äskeisen Dropletin, jolloin terminaalissa
 siirryin "omalle koneelle" (nadja@debbiedebian).  
+
+---
 
 #### SSH-avain (omalla virtuaalikoneella)  
 
@@ -220,7 +228,7 @@ Koska kaikki meni niin kuin pitikin, muistin virkistämiseksi päivitykset ja tu
 
         root@debian-s-1vcpu-1gb-fra1-01:~# sudo ufw enable  
 
-Proceed with operation? 
+        Proceed with operation? 
 
         root@debian-s-1vcpu-1gb-fra1-01:~# y  
 
@@ -228,7 +236,7 @@ Proceed with operation?
 
         root@debian-s-1vcpu-1gb-fra1-01:~# sudo apt-get install apache2  
 
-Do you want to continue?
+        Do you want to continue?
 
         root@debian-s-1vcpu-1gb-fra1-01:~# y  
 
@@ -246,6 +254,7 @@ Do you want to continue?
 
 ![Näyttökuva (208) helloThere](https://user-images.githubusercontent.com/118609353/217668104-94ec91b5-dc63-427f-9392-b9a4091b53cc.png)
 
+---
 #### Root kiinni  
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
@@ -253,8 +262,11 @@ Do you want to continue?
 Etsin tiedostosta kohdan 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
+    
+![Näyttökuva (209) rootLoginNo](https://user-images.githubusercontent.com/118609353/217683021-b324c22c-1b79-4184-ad9d-773aba584bf2.png)
 
 
+---
 ### d) Etsi merkkejä murtautumisyrityksistä.  
 
 
@@ -268,9 +280,7 @@ Etsin tiedostosta kohdan 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLog
 
 -->
 
-Also changed my password with  
 
-        $ passwd
 
 #### Lähteet  
   
@@ -279,6 +289,11 @@ Also changed my password with
 [Karvinen 2012: First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS](https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/)  
 [Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)  
 [Failed to start ssh service Unit ssh.service could not be found Ubuntu. Youtube.](https://www.youtube.com/watch?v=95ssd2a2Re0)  
+
+---
+Also changed my password with  
+
+        $ passwd
 
 
 
