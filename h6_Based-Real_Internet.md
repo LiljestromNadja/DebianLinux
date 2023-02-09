@@ -291,7 +291,7 @@ Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen
 [Failed to start ssh service Unit ssh.service could not be found Ubuntu. Youtube.](https://www.youtube.com/watch?v=95ssd2a2Re0)  
 
 ---
-Also changed my password with  
+I also changed my password with  
 
         $ passwd
         
