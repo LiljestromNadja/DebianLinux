@@ -79,7 +79,7 @@ Create Droplet ->
 
 Komentoriville mars:  
 
-    nadja@debbiedebian:~$ ssh root@PIv4osoite eli ->  
+    nadja@debbiedebian:~$ ssh root@IPv4osoite eli ->  
 
     nadja@debbiedebian:~$ ssh root@165.227.131.128  
 
@@ -194,7 +194,9 @@ Lisäsin käyttäjät sudo-oikeuksilla(snotroot) ja ilman(notroot):
 
 ---
 
-#### Root kiinni  
+#### Root kiinni
+
+Kun on ainakin yksi sudokäyttäjä tehty (ja testattu), voidaan jatkaa laittamalla rootin ssh-kirjautuminen jäähylle:
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
     
@@ -206,6 +208,13 @@ Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen
 
 ---
 
+**Rootin salasanan lukitseminen**
+
+
+        root@debian-s-1vcpu-1gb-fra1-01:~# usermod --lock root
+        root@debian-s-1vcpu-1gb-fra1-01:~# exit
+
+---
 #### SSH-avain (omalla virtuaalikoneella)  
 
         nadja@debbiedebian:~$ ssh-key ja tabia perään
@@ -229,10 +238,25 @@ Sitten taas omaan terminaaliin:
 
         nadja@debbiedebian:~/.ssh$ yes
 
-Nyt ei tarvitse siis kirjoittaa salasanaa, koska sellaista ei luotu. Jos salasanan käytön haluaa lukita ssh-avainta käytettäessä (ole tässä tapauksessa varma, että käytät ssh-avainta, sillä jos käytössä on vain salasana, lukitset itsesi ulos):
+Nyt ei tarvitse siis kirjoittaa salasanaa, koska sellaista ei luotu. Jos salasanan käytön haluaa lukita ssh-avainta käytettäessä (ole tässä tapauksessa varma, että käytät ssh-avainta, sillä jos käytössä on vain salasana, lukitset itsesi ulos rootista):
 
         root@debian-s-1vcpu-1gb-fra1-01:~# usermod --lock root
         root@debian-s-1vcpu-1gb-fra1-01:~# exit  
+        
+<!-- Tähän toimenpiteet ennen rootin sulkemista niin että muutkin kuin root pääsevät kirjautumaan ssh:lla .
+
+(Jos rootin & salasanan sulkee ennen kuin käyttäjät ja oikeudet, ei pääse sisään. Ainakaan näillä skillseillä)
+VASTA, Huom! VASTA sen jälkeen: 
+
+Root kiinni  
+
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
+    
+Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
+
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
+
+-->
 
 Testaillaan vielä:  
 
