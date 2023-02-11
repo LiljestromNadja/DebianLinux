@@ -168,6 +168,7 @@ Muokataan "etusivu":
 
 ![Näyttökuva (203) uusi curl localhost](https://user-images.githubusercontent.com/118609353/217607192-b06f8135-cf25-4716-9b2e-c058bef5d843.png)  
 
+Reikä tulimuuriin: 
 
     root@debian-s-1vcpu-1gb-amd-fra1-01:~# sudo ufw allow 80/tcp  
     
