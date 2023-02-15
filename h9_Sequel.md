@@ -145,7 +145,7 @@ eli
     
 Katsotaan:  
 
-  sudouser=> SELECT * FROM tamaontesti;  
+      sudouser=> SELECT * FROM tamaontesti;  
 
 
 ![Näyttökuva (234) crud delete](https://user-images.githubusercontent.com/118609353/219163892-7294926a-4a84-4c62-a0b5-7f3a2604f17a.png)
