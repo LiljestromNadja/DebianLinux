@@ -27,6 +27,14 @@ Karvinen 2018: [Install MariaDB on Ubuntu 18.04 – Database Management System, 
 
 ### x) Yrityssoftaa. Keksi esimerkki palvelusta, jota käytetään wepissä selaimella, koodi ajetaan palvelimella ja taustalla on tietokanta. Mitä etuja tällä toteutustavalla on vaihtoehtoisiin toteutustapoihin verrattuna? (Tässä x-alakohdassa ei tarvitse tehdä testejä koneella tai toteuttaa mitään, pelkkä kuvittelu ja vastauksen kirjoittaminen riittää)  
 
+Asiakastietojen hallintajärjestelmä  
+
+- Asiakastiedot ovat tietokannassa (asiakasnumero, yhteystiedot, laskutustiedot)  
+- Käyttöliittymä toimii selaimella:  
+  - Asiakkaalla oikeus muokata(omat yhteystiedot) ja katsella tietyjä tietoja(laskutustiedot)
+  - Yrityksen työntekijällä (user) laajemmat oikeudet tietojen muokkaamiseen kuin asiakkaalla 
+  - Erikseen käyttäjä (admin) jolla oikeus poistaa tietoja tai muokata tallennusrakennetta
+
 ---
 
 ### a) Postgre. Asenna PostgreSQL ja testaa se suorittamalla SQL-komento. (Jos teit jo tunnilla, tee uusi Linux-käyttäjä ja tälle tietokanta ja tietokantakäyttäjä.)   
