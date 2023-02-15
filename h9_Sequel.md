@@ -32,7 +32,7 @@ Asiakastietojen hallintajärjestelmä
 - Asiakastiedot ovat tietokannassa (asiakasnumero, yhteystiedot, laskutustiedot)  
 - Käyttöliittymä toimii selaimella:  
   - Asiakkaalla oikeus muokata(omat yhteystiedot) ja katsella tietyjä tietoja(laskutustiedot)
-  - Yrityksen työntekijällä (user) laajemmat oikeudet tietojen muokkaamiseen kuin asiakkaalla 
+  - Yrityksen työntekijällä laajemmat oikeudet tietojen muokkaamiseen kuin asiakkaalla 
   - Erikseen käyttäjä (admin) jolla oikeus poistaa tietoja tai muokata tallennusrakennetta
 
 ---
