@@ -166,7 +166,8 @@ eli
 
     \q 
     
-**"Edellinen":**    
+**"Edellinen":**  
+
     alt gr + q
     
 ---
