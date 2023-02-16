@@ -153,7 +153,7 @@ Katsotaan:
 
 Tiedon poistaminen:
 
-    DELETE FROM taulunNimi WHERE sarake='etsittavatieto':
+    DELETE FROM taulunNimi WHERE sarake='etsittavatieto';
     
 eli 
 
@@ -172,7 +172,7 @@ Katsotaan:
     
 eli 
 
-    sudouser=> DROP TABLE TESTATAAN; 
+    sudouser=> DROP TABLE testataan;  
     
 ![Näyttökuva (235) drop table](https://user-images.githubusercontent.com/118609353/219169005-a3437875-417c-46fc-9731-78a6caaa00bb.png)  
 
