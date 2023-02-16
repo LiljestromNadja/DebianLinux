@@ -39,6 +39,8 @@ Asiakastietojen hallintajärjestelmä
 Ratkaisun edut:  
 - Ei tarvitse erikseen asennettavaa käyttöliittymäohjelmistoa  
 - Ei tarvitse hankkia fyysistä palvelinlaitteistoa  
+- Kapasiteetin laajentaminen on joustavampaa virtuaalipalvelimella  
+
 ---
 
 ### a) Postgre. Asenna PostgreSQL ja testaa se suorittamalla SQL-komento. (Jos teit jo tunnilla, tee uusi Linux-käyttäjä ja tälle tietokanta ja tietokantakäyttäjä.)   
