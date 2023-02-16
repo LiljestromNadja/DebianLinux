@@ -29,8 +29,9 @@ Karvinen 2018: [Install MariaDB on Ubuntu 18.04 – Database Management System, 
 
 Asiakastietojen hallintajärjestelmä  
 
-- Asiakastiedot ovat tietokannassa (asiakasnumero, yhteystiedot, laskutustiedot)  
-- Käyttöliittymä toimii selaimella:  
+- Asiakastiedot ovat tietokannassa (asiakasnumero, yhteystiedot, laskutustiedot)
+- Ohjelmisto ja tietokanta palvelimella  
+- Käyttöliittymää käytetään selaimella:  
   - Asiakkaalla oikeus muokata(omat yhteystiedot) ja katsella tietyjä tietoja(laskutustiedot)
   - Yrityksen työntekijällä laajemmat oikeudet tietojen muokkaamiseen kuin asiakkaalla 
   - Erikseen käyttäjä (admin) jolla oikeus poistaa tietoja tai muokata tallennusrakennetta
