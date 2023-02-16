@@ -30,12 +30,15 @@ Karvinen 2018: [Install MariaDB on Ubuntu 18.04 – Database Management System, 
 Asiakastietojen hallintajärjestelmä  
 
 - Asiakastiedot ovat tietokannassa (asiakasnumero, yhteystiedot, laskutustiedot)
-- Ohjelmisto ja tietokanta palvelimella  
+- Ohjelmisto ja tietokanta (virtuaali)palvelimella  
 - Käyttöliittymää käytetään selaimella:  
   - Asiakkaalla oikeus muokata(omat yhteystiedot) ja katsella tietyjä tietoja(laskutustiedot)
   - Yrityksen työntekijällä laajemmat oikeudet tietojen muokkaamiseen kuin asiakkaalla 
-  - Erikseen käyttäjä (admin) jolla oikeus poistaa tietoja tai muokata tallennusrakennetta
+ - Erikseen käyttäjä (admin) jolla oikeus poistaa tietoja tai muokata tallennusrakennetta  
 
+Ratkaisun edut:  
+- Ei tarvitse erikseen asennettavaa käyttöliittymäohjelmistoa  
+- Ei tarvitse hankkia fyysistä palvelinlaitteistoa  
 ---
 
 ### a) Postgre. Asenna PostgreSQL ja testaa se suorittamalla SQL-komento. (Jos teit jo tunnilla, tee uusi Linux-käyttäjä ja tälle tietokanta ja tietokantakäyttäjä.)   
