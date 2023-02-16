@@ -121,7 +121,9 @@ eli
 Haetaan tietty merkkijono taulusta:  
 
     SELECT * FROM taulunnimi WHERE sarakkeennimi="etsittava";  
+    
 eli  
+
     sudouser=> SELECT * FROM tamaontesti WHERE name='Toinen';  
     
     
@@ -133,7 +135,7 @@ eli
 
 Tiedon muuttaminen:  
 
-    UPDATE taulunnimi SET sarake='paivitettavatieto' WHERE sarake'etsittavamerkkijo';  
+    UPDATE taulunnimi SET sarake='paivitettavatieto' WHERE sarake'etsittavamerkkijono';  
 
 eli 
 
