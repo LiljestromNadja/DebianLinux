@@ -135,7 +135,7 @@ eli
 
 Tiedon muuttaminen:  
 
-    UPDATE taulunnimi SET sarake='paivitettavatieto' WHERE sarake'etsittavamerkkijono';  
+    UPDATE taulunnimi SET sarake='paivitettavatieto' WHERE sarake='etsittavamerkkijono';  
 
 eli 
 
