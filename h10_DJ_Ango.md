@@ -65,7 +65,7 @@ Laitetaan kaikki siististi samaan paikkaan env-kansioon:
 
 Luodaan requirements.txt -tiedosto, joka sisältää tekstin 'django':   
 
-    (env) nadja@debbiedebian:~/django$ cat requirements.txt  
+    (env) nadja@debbiedebian:~/django$ micro requirements.txt  
     
     (env) nadja@debbiedebian:~/django$ pip install -r requirements.txt  
     
