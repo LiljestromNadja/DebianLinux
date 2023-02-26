@@ -248,7 +248,7 @@ Seuraavaksi muokataan tiedostoa **admin.py**:
 
 
 
-![Näyttökuva (257)](https://user-images.githubusercontent.com/118609353/221443132-03fbaebf-ad47-40de-9bf1-81e7b4993a43.png)
+![Näyttökuva (257)](https://user-images.githubusercontent.com/118609353/221443132-03fbaebf-ad47-40de-9bf1-81e7b4993a43.png)  
 
 
 Sitten kokeillaan selaimessa, saako käyttäjä 'Heikki' oikeuksillaan (staff&superuser) lisättyä, muokattua ja poistettua tietueita. Näyttää onnistuvan:  
