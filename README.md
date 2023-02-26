@@ -11,6 +11,7 @@ Linux Server Course - Linux Palvelimet 2023 alkukevät
 ### [h7_Based-Real_Internet ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h7_Based-Real_Internet.md)  
 ### [h8_Say_my_name ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h8_Say_my_name.md)  
 ### [h9_Sequel ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h9_Sequel.md)  
+### [h10_DJ_Ango ->] (https://github.com/LiljestromNadja/DebianLinux/commit/34bcb34236ce8aeac0ec867af3a12683c3734089)  
 <br></br>
 
 #### [- Installing Apache2 ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md)
