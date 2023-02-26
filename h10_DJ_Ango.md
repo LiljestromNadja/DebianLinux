@@ -86,7 +86,7 @@ Kokeillaan ajaa komento, jolla saadaan selville, mikä Djangon versio on asennet
 ---
 
 
-#### Projektin luominen 
+#### Projektin(sivuston) luominen 
 
 Luodaan projekti ja sille kansio:  
 
