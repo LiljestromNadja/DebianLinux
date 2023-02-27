@@ -153,6 +153,7 @@ Vaikka ollaan ihan oikeassa kansiossa, silti tulee virheilmoitus: "/usr/bin/env:
 
 ![Näyttökuva (244)](https://user-images.githubusercontent.com/118609353/221438165-2e646974-89a8-4b10-8bef-4f77b4414371.png)
 
+---
 
 #### Käyttäjät ja oikeudet   
 
