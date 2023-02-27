@@ -39,7 +39,7 @@ sen lisäksi olla tarkkana että kirjoittaa paketin nimen oikein.
     nadja@debbiedebian:~$ sudo apt-get install virtualenv python3-pip   
     
     
-Tehdään projektille uusi kansio ja siirrytään sinne:  
+Tehdään projektille (Django) uusi kansio ja siirrytään sinne:  
 
     nadja@debbiedebian:~$ mkdir django  
 
