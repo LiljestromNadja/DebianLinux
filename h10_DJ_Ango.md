@@ -331,9 +331,101 @@ Virtual env suljetaan komennolla:
 
 ### b) Vapaaehtoinen: Suhde. Tee monesta yhteen -suhde (many-to-one relationship) kahden taulun välille. Esim. Yksi yritys - monta työntekijää.
 
+Tein edellisten vaiheiden mukaan uuden projektin. Kun olin lisännyt muutaman käyttäjän käyttöliittymässä toimin seuraavasti:  
 
-    
+**Luodaan "app":**  
 
+	(env) nadja@debbiedebian:~/dja/nlilj$ ./manage.py startapp staffmembers   
+	(env) nadja@debbiedebian:~/dja/nlilj$ ls     
+	(env) nadja@debbiedebian:~/dja/nlilj$ ls staffmembers/  
+
+
+**App pitää myös lisätä 'settings.py' -tiedostoon:**  
+
+	(env) nadja@debbiedebian:~/dja/nlilj$ micro nlilj/settings.py  
+
+	-> INSTALLED_APPS = [  
+		'django.contrib.admin',  
+		'django.contrib.auth',   
+		'django.contrib.contenttypes',  
+		'django.contrib.sessions',  
+		'django.contrib.messages',  
+		'django.contrib.staticfiles',  
+		'staffmembers', # lisää app tänne  
+	]  
+
+**Luokkien lisääminen, models.py**  
+
+Lisätään models.py -tiedostoon luokat Department ja Staffmember, sekä Staffmember -luokkaan foreign key department:  
+
+
+	(env) nadja@debbiedebian:~/dja/nlilj$ micro staffmembers/models.py  
+
+
+	from django.db import models  
+
+
+	class Department(models.Model):  
+    		departmentname = models.CharField(max_length=250)  
+
+	class Staffmember(models.Model):  
+    		name = models.CharField(max_length=250)  
+    		city = models.CharField(max_length=250)  
+    		department = models.ForeignKey(Department, on_delete=models.CASCADE)  
+
+
+ **Lisätään admin.py -tiedostoon:**  
+
+	(env) nadja@debbiedebian:~/dja/nlilj$ micro staffmembers/admin.py 
+
+
+	from django.contrib import admin  
+	from . import models  
+
+	admin.site.register(models.Department)  
+	admin.site.register(models.Staffmember)  
+
+
+**Päivitetään tietokanta:**    
+
+	(env) nadja@debbiedebian:~/dja/nlilj$ ./manage.py makemigrations   
+	(env) nadja@debbiedebian:~/dja/nlilj$ ./manage.py migrate  
+	
+**Testaaminen käyttöliittymässä:**  
+
+Kokeillaan, toimivatko muutokset käyttöliittymässä ja lisätään pari työntekijää ja muutama osasto(koti, puutarha). Lisätään muutama työntekijä näihin osastoihin.  
+
+**Nimet näkyviin:**  
+
+Tehdään vielä pieni lisäys models.py -tiedostoon, jotta saadaan objektien nimet näkyviin käyttöliittymässä:
+
+	(env) nadja@debbiedebian:~/dja/nlilj$ micro staffmembers/models.py  
+
+	from django.db import models
+
+
+	class Department(models.Model):
+    		departmentname = models.CharField(max_length=250)
+
+    		def __str__(self): #tämä lisätään, osaston nimi
+        	return self.departmentname
+
+	class Staffmember(models.Model):
+    		name = models.CharField(max_length=250)
+    		city = models.CharField(max_length=250)
+    		department = models.ForeignKey(Department, on_delete=models.CASCADE)
+
+    		def __str__(self): # tämä lisätään, työntekijä nimi
+        	return self.name 
+
+Päivitetään vielä muutokset tietokantaan:    
+
+	(env) nadja@debbiedebian:~/dja/nlilj$ ./manage.py makemigrations  
+	(env) nadja@debbiedebian:~/dja/nlilj$ ./manage.py migrate  
+
+Toimii:  
+
+![Näyttökuva (264)](https://user-images.githubusercontent.com/118609353/221612463-53bb4395-1c84-4ca4-bc0c-d452d054eda7.png)
 
 
 
