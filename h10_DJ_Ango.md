@@ -283,7 +283,16 @@ Lisätään **models.py** tiedostoon:
 	        return self.name  
           
           
-![Näyttökuva (261)](https://user-images.githubusercontent.com/118609353/221444211-6d053a6e-419e-484b-bd1e-5b3c36a685b3.png)
+![Näyttökuva (261)](https://user-images.githubusercontent.com/118609353/221444211-6d053a6e-419e-484b-bd1e-5b3c36a685b3.png)  
+
+Nyt työntekijöiden nimet näkyvät:  
+
+![Näyttökuva (262)](https://user-images.githubusercontent.com/118609353/221445670-c196de49-b45a-4eb4-b02d-d0920ec289e7.png)
+
+Virtual env suljetaan komennolla:
+
+	(env) nadja@debbiedebian:~/django/nlilj$ deactivate
+
 
 ---
 
