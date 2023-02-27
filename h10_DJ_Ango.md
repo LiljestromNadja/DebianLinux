@@ -220,7 +220,7 @@ Täytyy myös luoda luokka **'Staffmember'**, jonka avulla määritellään tiet
     class Staffmember(models.Model):  
 	     name = models.CharField(max_length=250)
 	     city = models.CharField(max_length=250)
-	     departmentname = models.CharField(max_legth=250)
+	     departmentname = models.CharField(max_length=250)
 	
 
 ![Näyttökuva (254)](https://user-images.githubusercontent.com/118609353/221442480-85fd780f-a394-400a-9e57-73448b792a41.png)
