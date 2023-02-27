@@ -112,7 +112,7 @@ Tämä on "päätaso", josta manage.py -tiedosto löytyy. Kaikki Djangon komenno
 
 #### Kehityspalvelimen käynnistäminen  
 
-Käynnistetään kehityspalvelin, joka on siis kehityskäyttöön tarkoitettu. Ei julkaistavaksi siis.  
+Käynnistetään kehityspalvelin, joka on siis kehityskäyttöön tarkoitettu. Ei julkaistavaksi.  
 
     (env) nadja@debbiedebian:~/django/nlilj$ ./manage.py runserver 
 
