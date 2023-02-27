@@ -126,6 +126,34 @@ Suljen serverin:
 
 ---
 
+#### Toimiminen kahdella välilehdellä:  
+
+Avataan yksi terminaalivälilehti lisää jo aukiolevan lisäksi. 
+
+    nadja@debbiedebian:~/django/nlilj$ ls
+    
+    nadja@debbiedebian:~/django/nlilj$ ./manage.py runserver
+
+
+Vaikka ollaan ihan oikeassa kansiossa, silti tulee virheilmoitus: "/usr/bin/env: ‘python’: No such file or directory". Kehitysympäristö täytyy aktivoida uudelleen:  
+
+    nadja@debbiedebian:~/django/nlilj$ cd ..  
+    nadja@debbiedebian:~/django$ ls  
+
+    nadja@debbiedebian:~/django$ source env/bin/activate  
+    
+    (env) nadja@debbiedebian:~/django$ ls  
+    (env) nadja@debbiedebian:~/django$ cd nlilj/  
+    (env) nadja@debbiedebian:~/django/nlilj$ ls  
+    
+    (env) nadja@debbiedebian:~/django/nlilj$ ./manage.py runserver  
+
+
+
+
+![Näyttökuva (244)](https://user-images.githubusercontent.com/118609353/221438165-2e646974-89a8-4b10-8bef-4f77b4414371.png)
+
+
 #### Käyttäjät ja oikeudet   
 
 Aina kun tietokantaan tehdään muutoksia:  
@@ -296,32 +324,6 @@ Virtual env suljetaan komennolla:
 
 ---
 
-#### Toimiminen kahdella välilehdellä:  
-
-Avataan yksi terminaalivälilehti lisää jo aukiolevan lisäksi. 
-
-    nadja@debbiedebian:~/django/nlilj$ ls
-    
-    nadja@debbiedebian:~/django/nlilj$ ./manage.py runserver
-
-
-Vaikka ollaan ihan oikeassa kansiossa, silti tulee virheilmoitus: "/usr/bin/env: ‘python’: No such file or directory". Kehitysympäristö täytyy aktivoida uudelleen:  
-
-    nadja@debbiedebian:~/django/nlilj$ cd ..  
-    nadja@debbiedebian:~/django$ ls  
-
-    nadja@debbiedebian:~/django$ source env/bin/activate  
-    
-    (env) nadja@debbiedebian:~/django$ ls  
-    (env) nadja@debbiedebian:~/django$ cd nlilj/  
-    (env) nadja@debbiedebian:~/django/nlilj$ ls  
-    
-    (env) nadja@debbiedebian:~/django/nlilj$ ./manage.py runserver  
-
-
-
-
-![Näyttökuva (244)](https://user-images.githubusercontent.com/118609353/221438165-2e646974-89a8-4b10-8bef-4f77b4414371.png)
 
 
 
