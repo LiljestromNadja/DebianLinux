@@ -354,7 +354,7 @@ Tein edellisten vaiheiden mukaan uuden projektin. Kun olin lisännyt muutaman k�
 		'staffmembers', # lisää app tänne  
 	]  
 
-**Luokkien lisääminen, models.py**  
+**Luokkien lisääminen, models.py:**  
 
 Lisätään models.py -tiedostoon luokat Department ja Staffmember, sekä Staffmember -luokkaan foreign key department:  
 
