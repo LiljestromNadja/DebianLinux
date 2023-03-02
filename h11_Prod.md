@@ -26,6 +26,12 @@ c) Vapaaehtoinen, vaikea: muutto: jatkoa b-kohtaan: muokkaa tietokannan rakennet
 
 #### Päivitykset, palomuuri ja Apachen asennus  
 
+	$ su root  (jos uusi virtuaalikone)
+	
+	root:# sudo adduser nadja sudo (jos uusi virtuaalikone)
+	
+	root:# su nadja (jos uusi virtuaalikone)
+
 	$ sudo apt-get update   
 
 	$ sudo apt-get -y dist-upgrade  
