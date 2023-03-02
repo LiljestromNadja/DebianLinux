@@ -22,7 +22,7 @@ c) Vapaaehtoinen, vaikea: muutto: jatkoa b-kohtaan: muokkaa tietokannan rakennet
 
 ###  a) Tee Djangon tuotantoasennus.  
 
-
+Asensin tehtävää varten täysin uuden virtuaalikoneen. 
 
 #### Päivitykset, palomuuri ja Apachen asennus  
 
