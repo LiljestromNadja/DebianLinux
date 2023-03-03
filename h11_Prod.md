@@ -146,7 +146,7 @@ Tuli error:
 
 ![Näyttökuva (275)](https://user-images.githubusercontent.com/118609353/222453176-d9e46327-ad8f-4267-8e5f-1deea8d9de68.png)
 
-Siirrän djfrontpage.conf -tiedoston sites-available-kansioon ja kokeilen uudestaan: 
+Siirrän **djfrontpage.conf** -tiedoston sites-available-kansioon ja kokeilen uudestaan: 
 
 	nadja@debian:/etc/apache2/sites-available$ sudo a2ensite djfrontpage.conf
 	
@@ -237,7 +237,7 @@ Luodaan uusi django-projekti:
  
 	
 	-> "CommandError: '/home/nadja/publicwsgi/nlilj' already exists"
-	-> valittaa koska static laitettiin tänne aikaisemmin  
+	-> valittaa koska static laitettiin tänne aikaisemmin nlilj-nimiseen kansioon
 
 ![Näyttökuva 2023-03-02 163341](https://user-images.githubusercontent.com/118609353/222458443-734c2f9a-9541-4e3f-82dd-ea9c698536b4.png)
 
