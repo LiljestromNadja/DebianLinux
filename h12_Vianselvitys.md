@@ -112,6 +112,7 @@ Tarkistetaan että kopio on olemassa ja meni sinne minne oli tarkoitus:
     nadja@debian:~$ cd nlilj/  
     nadja@debian:~/nlilj$ ls  
 
+
 ![Näyttökuva 2023-03-05 170534](https://user-images.githubusercontent.com/118609353/222968628-b9512fde-406b-438e-b215-394126660ec2.png)
 
 Mennään takaisin **publicwsgi** -kansioon ja poistetaan **nlilj** -kansio (klo 17:13) josta äsken tehtiin kopio:  
