@@ -173,7 +173,9 @@ Kokeillaan selaimessa 'localhost/admin/':
 ![Näyttökuva 2023-03-05 175557](https://user-images.githubusercontent.com/118609353/222971272-27b90db2-9613-403c-9722-e0bf54b01056.png)
 
 
+
 	
+
 
 
 
@@ -187,6 +189,27 @@ Kokeillaan selaimessa 'localhost/admin/':
 ---
 
 ### c) Projektikansiolla väärät oikeudet ('chmod ugo-rwx teroco/', 'chmod u+rx teroco/')  
+
+(20:55):  
+
+	nadja@debian:~/publicwsgi$ chmod ugo-rwx nlilj/
+
+Selaimessa 'localhost/admin':  
+
+![Näyttökuva 2023-03-05 205538](https://user-images.githubusercontent.com/118609353/222980153-8bcc1d8c-1383-4cfb-91b2-010c2918c2e5.png)  
+
+Apachen error log:  
+
+	nadja@debian:~$ sudo tail -F /var/log/apache2/error.log
+
+![Näyttökuva 2023-03-05 205836](https://user-images.githubusercontent.com/118609353/222980277-f003a186-6ceb-4903-a275-aca7f38ae5e4.png)
+
+
+
+Palautetaan äskeinen, toimiva tila:  
+
+	nadja@debian:~/publicwsgi$ chmod ugo+wx nlilj/
+
 
 ---
 
@@ -332,14 +355,29 @@ Selain 'localhost/admin/':
 
 ![Näyttökuva 2023-03-05 204615](https://user-images.githubusercontent.com/118609353/222979687-e5a9018a-def4-4a86-90a3-98015ef01852.png)  
 
+Kokeillaan testipalvelinta:  
 
+	(env) nadja@debian:~/publicwsgi/nlilj$ ./manage.py runserver
 
+Saadaan viesti:  
 
+![Näyttökuva 2023-03-05 204900](https://user-images.githubusercontent.com/118609353/222979807-30e08818-e7fe-4e74-90f0-675442caedba.png)
 
+Korjataan error:  
 
+	nadja@debian:~/publicwsgi/nlilj/nlilj$ micro settings.py 
 
+Muokataan kohtaa ALLOWED_HOSTS :  
+	
+	DEBUG = False
+	ALLOWED_HOSTS = []
+	
+	-> 
+	
+	DEBUG = False
+	ALLOWED_HOSTS = ['localhost']
 
-### e) Vapaaehtoinen bonus: oma, itse keksitty ongelma.  
+ 
 
 ---
 
