@@ -265,7 +265,7 @@ Mennään selaimeen 'localhost/admin/':
 
 ### e) Apachen WSGI-moduli puuttuu ('sudo apt-get purge libapache2-mod-wsgi-py3' tms)  
 
-Poistetaan (20:):  
+Poistetaan (20:28):  
 
 	nadja@debian:~$ sudo apt-get purge libapache2-mod-wsgi-py3   
 	
@@ -309,6 +309,35 @@ Käynnistetään Apache uudelleen(20:35):
 ### f) Väärät domain-nimet ALLOWED_HOSTS-kohdassa (settings.py, ja DEBUG=False)  
 
 ---
+
+Mennään tiedostoon **settings.py**:  
+
+	nadja@debian:~/publicwsgi/nlilj/nlilj$ micro settings.py 
+
+Muokataan kohtaa ALLOWED_HOSTS :  
+	
+	DEBUG = False
+	ALLOWED_HOSTS = ['localhost']
+	
+	-> 
+	
+	DEBUG = False
+	ALLOWED_HOSTS = []
+	
+
+![Näyttökuva 2023-03-05 204351](https://user-images.githubusercontent.com/118609353/222979552-416e303f-94dd-49cc-9691-8a2b6b273ea4.png)  
+
+Selain 'localhost/admin/':  
+
+
+![Näyttökuva 2023-03-05 204615](https://user-images.githubusercontent.com/118609353/222979687-e5a9018a-def4-4a86-90a3-98015ef01852.png)  
+
+
+
+
+
+
+
 
 ### e) Vapaaehtoinen bonus: oma, itse keksitty ongelma.  
 
