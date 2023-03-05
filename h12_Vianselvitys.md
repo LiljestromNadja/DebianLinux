@@ -400,14 +400,6 @@ Muokataan kohtaa ALLOWED_HOSTS :
   
 [Linux-palvelimet alkukevät 2023](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)  
 
-[Karvinen 2022: Deploy Django 4 - Production Install](https://terokarvinen.com/2022/deploy-django/)  
-[Django Documentation - How to manage static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/4.1/howto/static-files/)  
-
-
-<!--- 
-https://www.digitalocean.com/community/tutorials/how-to-install-django-and-set-up-a-development-environment-on-ubuntu-22-04
----
---->
 
 
 
