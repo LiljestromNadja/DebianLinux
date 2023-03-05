@@ -138,7 +138,38 @@ Komentorivillä:
     nadja@debian:~$ sudo tail -F /var/log/apache2/error.log
 
 
-![Näyttökuva 2023-03-05 172606](https://user-images.githubusercontent.com/118609353/222969744-7874ae72-d472-4d06-b8bc-d7db38a82c7a.png)
+![Näyttökuva 2023-03-05 172606](https://user-images.githubusercontent.com/118609353/222969744-7874ae72-d472-4d06-b8bc-d7db38a82c7a.png)  
+
+Menen vielä sijaintiin, missä **manage.py** -tiedosto tällä hetkellä on ja kokeilen:  
+
+	(env) nadja@debian:~/nlilj$ ./manage.py runserver  
+	
+![Näyttökuva 2023-03-05 174353](https://user-images.githubusercontent.com/118609353/222970654-b810dcf0-be80-4a90-b3ac-3cd863c96e22.png)
+
+
+Korjataan tilanne, kopioidaan **nlilj** -kansio takaisiin kansioon **publicwsgi**:  
+
+	nadja@debian:~$ ls  
+	
+	nadja@debian:~$ cp -r nlilj/ publicwsgi/  
+	
+	nadja@debian:~$ cd publicwsgi/  
+	nadja@debian:~/publicwsgi$ ls  
+
+	
+
+![Näyttökuva 2023-03-05 174929](https://user-images.githubusercontent.com/118609353/222970926-f4434d6c-d19b-4f2f-9e76-f753e57401f6.png)
+
+Poistetaan vielä **nlilj** -kansio sijainnista /home/nadja:  
+
+	nadja@debian:~$ rm -r nlilj/
+
+
+![Näyttökuva 2023-03-05 175208](https://user-images.githubusercontent.com/118609353/222971093-8cf1d524-b820-4ed8-a0fb-e766d205d6e9.png)
+
+
+	
+
 
 
      
