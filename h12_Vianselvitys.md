@@ -130,7 +130,8 @@ Mennään takaisin **publicwsgi** -kansioon ja poistetaan **nlilj** -kansio (klo
 
 Avaan selaimen ja osoitteen 'localhost/admin/' ja saan ilmoituksen '403 forbidden':  
 
-![Näyttökuva 2023-03-05 171307](https://user-images.githubusercontent.com/118609353/222969121-cf76955a-3f88-4424-ba71-4a287073815a.png)
+
+![Näyttökuva 2023-03-05 171458](https://user-images.githubusercontent.com/118609353/222970275-9ba1a7e3-c8dc-441d-99a8-7730bf538079.png)
 
 Komentorivillä:   
 
