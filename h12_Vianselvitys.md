@@ -147,9 +147,10 @@ Menen vielä sijaintiin, missä **manage.py** -tiedosto tällä hetkellä on ja 
 ![Näyttökuva 2023-03-05 174353](https://user-images.githubusercontent.com/118609353/222970654-b810dcf0-be80-4a90-b3ac-3cd863c96e22.png)
 
 
-Korjataan tilanne, kopioidaan **nlilj** -kansio takaisiin kansioon **publicwsgi**:  
+Korjataan tilanne, kopioidaan **nlilj** -kansio takaisin kansioon **publicwsgi**:  
 
 	nadja@debian:~$ ls  
+
 	
 	nadja@debian:~$ cp -r nlilj/ publicwsgi/  
 	
@@ -165,7 +166,11 @@ Poistetaan vielä **nlilj** -kansio sijainnista /home/nadja:
 	nadja@debian:~$ rm -r nlilj/
 
 
-![Näyttökuva 2023-03-05 175208](https://user-images.githubusercontent.com/118609353/222971093-8cf1d524-b820-4ed8-a0fb-e766d205d6e9.png)
+![Näyttökuva 2023-03-05 175208](https://user-images.githubusercontent.com/118609353/222971093-8cf1d524-b820-4ed8-a0fb-e766d205d6e9.png)  
+
+Kokeillaan selaimessa 'localhost/admin/':  
+
+![Näyttökuva 2023-03-05 175557](https://user-images.githubusercontent.com/118609353/222971272-27b90db2-9613-403c-9722-e0bf54b01056.png)
 
 
 	
