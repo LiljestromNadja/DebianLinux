@@ -209,6 +209,11 @@ Apachen error log:
 Palautetaan äskeinen, toimiva tila:  
 
 	nadja@debian:~/publicwsgi$ chmod ugo+wx nlilj/
+	
+<!-- 
+en ottanut selkoa:  
+ 	
+	nadja@debian:~/publicwsgi$ chmod u+rx nlilj/-->
 
 
 ---
