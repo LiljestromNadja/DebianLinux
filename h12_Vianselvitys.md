@@ -265,6 +265,45 @@ Mennään selaimeen 'localhost/admin/':
 
 ### e) Apachen WSGI-moduli puuttuu ('sudo apt-get purge libapache2-mod-wsgi-py3' tms)  
 
+Poistetaan (20:):  
+
+	nadja@debian:~$ sudo apt-get purge libapache2-mod-wsgi-py3   
+	
+Käynnistetään Apache uudelleen(20:27):  
+
+	nadja@debian:~$ sudo systemctl restart apache2
+
+Heti tuli viesti:  
+
+![Näyttökuva 2023-03-05 202816](https://user-images.githubusercontent.com/118609353/222978836-5bf77172-45a7-4974-93bb-39232bbc30a9.png)
+
+	nadja@debian:~$ /sbin/apache2ctl configtest  
+	
+
+![Näyttökuva 2023-03-05 203011](https://user-images.githubusercontent.com/118609353/222978924-0540b74a-1564-4671-a167-5c672eb3eb37.png)
+
+
+Korjataan äsken aiheutettu error (20:33):  
+
+	nadja@debian:~$ sudo apt-get install libapache2-mod-wsgi-py3  
+	
+Käynnistetään Apache uudelleen(20:35):  
+
+	nadja@debian:~$ sudo systemctl restart apache2  
+	
+	nadja@debian:~$ /sbin/apache2ctl configtest  
+
+![Näyttökuva 2023-03-05 203718](https://user-images.githubusercontent.com/118609353/222979257-39fa18e3-6a25-4cfd-a3cc-01dbabbfba90.png)
+
+
+	
+
+
+	
+
+
+
+
 ---
 
 ### f) Väärät domain-nimet ALLOWED_HOSTS-kohdassa (settings.py, ja DEBUG=False)  
