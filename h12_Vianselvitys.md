@@ -192,6 +192,47 @@ Kokeillaan selaimessa 'localhost/admin/':
 
 ### d) Kirjoitusvirhe Apachen asetustiedostossa (/etc/apache2/sites-available/terokarvinen.conf tms)  
 
+Mennään kansioon /etc/apache2/sites-available/:  
+
+	nadja@debian:~$ cd  /etc/apache2/sites-available/
+	nadja@debian:/etc/apache2/sites-available$ ls
+	
+	nadja@debian:/etc/apache2/sites-available$ micro djfrontpage.conf 
+	
+![Näyttökuva 2023-03-05 182408](https://user-images.githubusercontent.com/118609353/222972820-0a7c5be6-5438-4ab7-a763-6bcd4b2865b9.png)
+
+
+Muutetaan tätä kohtaa:  
+	
+	Define TDIR /home/nadja/publicwsgi/nlil
+	
+	-> 
+	
+	Define TDIR /home/nadja/publicwsgi  
+	
+	
+Käynnistetään Apache uudelleen (19:04):  
+
+	nadja@debian:/etc/apache2/sites-available$ sudo systemctl restart apache2
+	
+
+Mennään Apachen error logiin:  
+
+	nadja@debian:~$ sudo tail -F /var/log/apache2/error.log
+
+
+![Näyttökuva 2023-03-05 190555](https://user-images.githubusercontent.com/118609353/222975032-911cd7a4-0f30-4693-83ed-32804fa5e023.png)
+
+Virheilmoituksesta käy ilmi, että 'APACHE_RUN_DIR' on määrittelemättä, sekä miten tilanne korjataan. 
+
+Mennään vielä selaimeen 'localhost' (19:12) ja 'localhost/admin' (19:13):  
+
+
+![Näyttökuva 2023-03-05 191540](https://user-images.githubusercontent.com/118609353/222975495-35829c67-7a58-4542-9e48-d930b1d5f758.png)
+
+
+
+
 ---
 
 ### e) Apachen WSGI-moduli puuttuu ('sudo apt-get purge libapache2-mod-wsgi-py3' tms)  
