@@ -204,7 +204,7 @@ Mennään kansioon /etc/apache2/sites-available/:
 
 Muutetaan tätä kohtaa:  
 	
-	Define TDIR /home/nadja/publicwsgi/nlil
+	Define TDIR /home/nadja/publicwsgi/nlilj
 	
 	-> 
 	
@@ -228,8 +228,36 @@ Virheilmoituksesta käy ilmi, että 'APACHE_RUN_DIR' on määrittelemättä, sek
 Mennään vielä selaimeen 'localhost' (19:12) ja 'localhost/admin' (19:13):  
 
 
-![Näyttökuva 2023-03-05 191540](https://user-images.githubusercontent.com/118609353/222975495-35829c67-7a58-4542-9e48-d930b1d5f758.png)
+![Näyttökuva 2023-03-05 191540](https://user-images.githubusercontent.com/118609353/222975495-35829c67-7a58-4542-9e48-d930b1d5f758.png)  
 
+Apachen error log:  
+
+![Näyttökuva 2023-03-05 191951](https://user-images.githubusercontent.com/118609353/222975694-66ee27c0-d176-4c97-a12e-be4f3e433fe5.png)
+
+
+![Näyttökuva 2023-03-05 191917](https://user-images.githubusercontent.com/118609353/222975700-698fcb73-85e6-4057-9f57-74c6fd49b77f.png)
+
+ModuleNotFoundError: No module named 'nlilj.settings', eli kyseisen nimistä moduulia ei löydy.  
+
+Korjataan tilanne:  
+
+	nadja@debian:/etc/apache2/sites-available$ micro djfrontpage.conf 
+	
+	Define TDIR /home/nadja/publicwsgi
+	
+	-> 
+	
+	Define TDIR /home/nadja/publicwsgi/nlilj  
+
+Käynnistetään Apache uudelleen (19:26):  
+
+	nadja@debian:/etc/apache2/sites-available$ sudo systemctl restart apache2  
+	
+Mennään selaimeen 'localhost/admin/':  	
+
+![Näyttökuva 2023-03-05 192752](https://user-images.githubusercontent.com/118609353/222976065-16c86a2a-7ae7-4ecd-9557-6a6110ff7d87.png)
+
+	
 
 
 
