@@ -58,7 +58,7 @@ Luodaan Javalle oma kansio:
         nadja@debian:~/hei$ mkdir javalainen
         nadja@debian:~/hei$ cd javalainen/ 
         
-Ja tiedosto Hello.java:  
+Ja tiedosto **Hello.java:**  
 
         nadja@debian:~/hei/javalainen$ micro Hello.java  
         
@@ -121,7 +121,7 @@ Kokeillaan:
  
 **Python:**  
 
- Muokataan tiedostoa **hello py:**  
+ Muokataan tiedostoa **hello.py:**  
  
     nadja@debian:~/hei$ micro hello.py 
     
