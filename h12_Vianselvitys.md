@@ -254,8 +254,8 @@ Tämä ei ilmeisesti ole tavoiteltava tila, joten täytynee palauttaa tila, jost
 	-rw-r--r-- 1 nadja nadja    7  2. 3. 02:50 requirements.txt
 	
 
-"Paikkanumerot":  	
-0=?  
+"Paikkanumerot":  
+0= d=directory, -=file  
 1,2,3=user  
 4,5,6=group   
 7,8,9=other  
