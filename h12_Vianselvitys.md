@@ -455,7 +455,9 @@ Kokeillaan testipalvelinta:
 
 Saadaan viesti:  
 
-![Näyttökuva 2023-03-05 204900](https://user-images.githubusercontent.com/118609353/222979807-30e08818-e7fe-4e74-90f0-675442caedba.png)
+![Näyttökuva 2023-03-05 204900](https://user-images.githubusercontent.com/118609353/222979807-30e08818-e7fe-4e74-90f0-675442caedba.png)  
+
+Viestistä käy ilmi, että debugin ollessa pois päältä on asetettava sallitus osoitteet. 
 
 Korjataan error:  
 
