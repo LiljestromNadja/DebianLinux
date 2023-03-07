@@ -190,10 +190,26 @@ Kokeillaan selaimessa 'localhost/admin/':
 
 ### c) Projektikansiolla väärät oikeudet ('chmod ugo-rwx teroco/', 'chmod u+rx teroco/')  
 
+
+	
+**u=user  
+g=group  
+o=other  
+ugo=a  
+a=all  
+r=read  
+w=write  
+x=execute  
++=add  
+-=delete**  
+[Linux-wiki](https://www.linux.fi/wiki/Tiedoston_oikeudet)  
+
+
+
 (20:55):  
 
-	nadja@debian:~/publicwsgi$ chmod ugo-rwx nlilj/
-
+	nadja@debian:~/publicwsgi$ chmod ugo-rwx nlilj/  
+	
 Selaimessa 'localhost/admin':  
 
 ![Näyttökuva 2023-03-05 205538](https://user-images.githubusercontent.com/118609353/222980153-8bcc1d8c-1383-4cfb-91b2-010c2918c2e5.png)  
@@ -206,14 +222,86 @@ Apachen error log:
 
 
 
-Palautetaan äskeinen, toimiva tila:  
+Kumotaan äskeinen muutos:  
 
-	nadja@debian:~/publicwsgi$ chmod ugo+wx nlilj/
+	nadja@debian:~/publicwsgi$ chmod ugo+rwx nlilj/
+
+Nyt kansio näyttää tältä:  
+
+![Näyttökuva 2023-03-07 125729](https://user-images.githubusercontent.com/118609353/223403209-4d2beb13-60ef-4e33-8d26-ff88f94e6d34.png)  
+
+Kokeillaan vielä toista komentoa:   
+
+	nadja@debian:~/publicwsgi$ chmod u+rx nlilj/  
 	
-<!-- 
-en ottanut selkoa:  
- 	
-	nadja@debian:~/publicwsgi$ chmod u+rx nlilj/-->
+	
+Oikeuksien listaaminen:   
+
+	nadja@debian:~/publicwsgi$ ls -l  
+
+	
+![Näyttökuva 2023-03-07 131842](https://user-images.githubusercontent.com/118609353/223407626-783a35f7-428f-4a51-aeb6-d8ce62256769.png)
+
+localhost/admin/:  
+
+![Näyttökuva 2023-03-07 131949](https://user-images.githubusercontent.com/118609353/223407844-9087e6d8-005c-4a2e-ab91-07e1595baabb.png)
+
+Tämä ei ilmeisesti ole tavoiteltava tila, joten täytynee palauttaa tila, josta lähdettiin liikkeelle:  
+
+	drwxr-xr-x 4 nadja nadja 4096  2. 3. 00:38 env
+	drwxr-xr-x 4 nadja nadja 4096  2. 3. 05:08 nlilj
+	-rw-r--r-- 1 nadja nadja    7  2. 3. 02:50 requirements.txt
+	
+
+Paikat:  	
+0=?  
+1,2,3=user  
+4,5,6=group   
+7,8,9=other  
+
+
+Poistin asiaa selvitellessäni kaikki oikeudet yksitellen:  
+
+User:  
+
+	nadja@debian:~/publicwsgi$ chmod u-rwx nlilj/   
+
+Group:  
+
+	nadja@debian:~/publicwsgi$ chmod g-rwx nlilj/  
+	
+Other:  
+	
+	nadja@debian:~/publicwsgi$ chmod o-rwx nlilj/  
+
+
+![Näyttökuva 2023-03-07 134219](https://user-images.githubusercontent.com/118609353/223412569-2145abf7-7c5b-4cdf-9012-54caf280bc7a.png) 
+
+..jonka jälkeen lähdin palauttamaan lähtötilannetta:  
+
+	nadja@debian:~/publicwsgi$ chmod u+rwx nlilj/
+
+	nadja@debian:~/publicwsgi$ chmod g+rx nlilj/
+	
+	nadja@debian:~/publicwsgi$ chmod o+rx nlilj/
+	
+	
+
+![Näyttökuva 2023-03-07 134836](https://user-images.githubusercontent.com/118609353/223413763-cf589135-fcd0-446e-9684-8d6a5a9f8483.png)  
+
+Kokeillaan vielä selaimessa 'localhost/admin/. Ensin tuli 500 error jolloin käynnistin vielä apachen uudelleen:  
+
+	nadja@debian:~/publicwsgi$ sudo systemctl restart apache 2
+
+
+localhost/admin/:  
+
+![Näyttökuva 2023-03-07 135427](https://user-images.githubusercontent.com/118609353/223415168-d20b8b8f-48d3-4ca8-aab3-b4516fb380ce.png)
+
+
+
+
+
 
 
 ---
@@ -399,6 +487,8 @@ Muokataan kohtaa ALLOWED_HOSTS :
 #### Lähteet  
   
 [Linux-palvelimet alkukevät 2023](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)  
+
+[Linux.fi. Tiedoston oikeudet](https://www.linux.fi/wiki/Tiedoston_oikeudet)   
 
 
 
