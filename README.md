@@ -12,7 +12,9 @@ Linux Server Course - Linux Palvelimet 2023 alkukevät
 #### [h8_Say_my_name ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h8_Say_my_name.md)  
 #### [h9_Sequel ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h9_Sequel.md)  
 #### [h10_DJ_Ango ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h10_DJ_Ango.md)  
-#### [h11_Prod ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h11_Prod.md)
+#### [h11_Prod ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h11_Prod.md)  
+#### [h12_Vianselvitys ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h12_Vianselvitys.md)  
+#### [h13_HelloWorld ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/h13_HelloWorld.md)
 <br></br>
 
 ##### [- Installing Apache2 ->](https://github.com/LiljestromNadja/DebianLinux/blob/main/InstallingApache2.md)
