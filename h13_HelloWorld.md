@@ -181,7 +181,41 @@ Kokeillaan:
 
 ![Näyttökuva 2023-03-07 184515](https://user-images.githubusercontent.com/118609353/223490436-0744ffa3-654b-4b2a-95e9-6bf7590909b1.png)
 	
+
+**C:**  
+
+Muokataan tiedostoa **moicee.c:**  
+
+	nadja@debian:~/hei$ micro moicee.c
 	
+	->
+	#include <stdio.h>
+	int main()
+	{
+ 	printf("Hello World\n");
+
+	char nimi[30];
+
+
+	printf("Kirjoita nimesi: \n");
+
+
+	scanf("%s", nimi);
+
+
+	printf("Tervehdys %s", nimi);
+	printf("\n");
+
+
+	}  
+	
+Kokeillaan:  
+
+	nadja@debian:~/hei$ gcc moicee.c -o moiceec  
+	nadja@debian:~/hei$ ./moiceec
+
+	
+![Näyttökuva 2023-03-08 000233](https://user-images.githubusercontent.com/118609353/223563631-1b79ca76-6b2c-4961-8b5f-0d47f9746a2c.png)
 
 
 ---
