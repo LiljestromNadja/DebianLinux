@@ -200,8 +200,9 @@ a=all
 r=read  
 w=write  
 x=execute  
-+=add  
--=delete**  
++=add permission  
+-=delete permission**  
+
 [Linux-wiki](https://www.linux.fi/wiki/Tiedoston_oikeudet)  
 
 
@@ -253,7 +254,7 @@ Tämä ei ilmeisesti ole tavoiteltava tila, joten täytynee palauttaa tila, jost
 	-rw-r--r-- 1 nadja nadja    7  2. 3. 02:50 requirements.txt
 	
 
-Paikat:  	
+"Paikkanumerot":  	
 0=?  
 1,2,3=user  
 4,5,6=group   
