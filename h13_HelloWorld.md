@@ -27,7 +27,7 @@ c) Vapaaehtoinen: Tee greetme kahdella muullakin kielellä.
 Luodaan hakemisto hei ja siirrytään sinne:  
 
     nadja@debian:~$ mkdir hei  
-    nadja@debian:~/hei$ ^C
+    nadja@debian:~/hei$ cd hei
 
 **Python:**  
 
