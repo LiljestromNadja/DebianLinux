@@ -18,6 +18,7 @@ c) Vapaaehtoinen: Tee greetme kahdella muullakin kielellä.
 
 
 
+[Lähde: Linux-palvelimet 2023 alkukevät](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)   
 
 ---
 ## Tehtävät  
