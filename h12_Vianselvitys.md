@@ -32,6 +32,8 @@ e) Vapaaehtoinen bonus: oma, itse keksitty ongelma.
 - 'sudo systemctl status apache2'  
 
 
+[Lähde: Linux-palvelimet 2023 alkukevät](https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)   
+
 ---
 
 ### Alkutilanne  
