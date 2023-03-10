@@ -193,19 +193,19 @@ Muokataan tiedostoa **moicee.c:**
 	#include <stdio.h>
 	int main()
 	{
- 	printf("Hello World\n");
+ 		printf("Hello World\n");
 
-	char nimi[30];
-
-
-	printf("Kirjoita nimesi: \n");
+		char nimi[30];
 
 
-	scanf("%s", nimi);
+		printf("Kirjoita nimesi: \n");
 
 
-	printf("Tervehdys %s", nimi);
-	printf("\n");
+		scanf("%s", nimi);
+
+
+		printf("Tervehdys %s", nimi);
+		printf("\n");
 
 
 	}  
