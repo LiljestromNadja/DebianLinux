@@ -627,6 +627,7 @@ Kerrotaan käytettävä komentotulkki:
     echo "Tervehdys"
     
 Testataan:  
+
     ./tiedostonnimi  
     
 Kopioidaan tiedosto:
