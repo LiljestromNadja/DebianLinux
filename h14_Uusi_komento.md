@@ -377,6 +377,93 @@ Testataan käyttäjällä testierkki:
 
 
 
+#### annatiedot
+
+Luodaan loop, joka listaa tiedostot ja niiden tietotyypin. Aloitetaan luomalla kansio **looppaa** ja siirtymällä sinne:  
+
+    nadja@debian:~/tryscripts$ mkdir looppaa
+    nadja@debian:~/tryscripts$ cd looppaa
+    
+    
+Luodaan tiedosto **annatiedot**:  
+
+    nadja@debian:~/tryscripts/looppaa$ micro annatiedot 
+    
+    for FILE in "$@"
+    do 
+	    file "$FILE" | grep "$FILE" --color
+	    echo 
+    done
+    
+Testataan:  
+
+    nadja@debian:~/tryscripts/looppaa$ bash annatiedot *
+    
+    ->
+    annatiedot: ASCII text
+
+    tiedosto: ASCII text
+
+    tiedostot: ASCII text
+
+![Näyttökuva 2023-03-13 011841](https://user-images.githubusercontent.com/118609353/224580117-bbe69d8e-2416-4834-8819-9a38fcd4bbec.png)
+
+
+Oikeudet:  
+
+    nadja@debian:~/tryscripts/looppaa$ ls -l annatiedot 
+    
+    ->
+    -rw-r--r-- 1 nadja nadja 87 Mar 13 01:16 annatiedot
+    
+    nadja@debian:~/tryscripts/looppaa$ chmod ugo+x annatiedot 
+    nadja@debian:~/tryscripts/looppaa$ ls -l annatiedot 
+    
+    ->
+    -rwxr-xr-x 1 nadja nadja 87 Mar 13 01:16 annatiedot
+
+
+
+![Näyttökuva 2023-03-13 012354](https://user-images.githubusercontent.com/118609353/224580327-f42e971e-3e9f-440f-80dc-0c8e6f95e133.png)
+
+Testataan:  
+
+    nadja@debian:~/tryscripts/looppaa$ ./annatiedot *
+
+    ->
+    
+    annatiedot: ASCII text
+
+    tiedosto: ASCII text
+
+    tiedostot: ASCII text 
+    
+    
+Kopioidaan **annatiedot** hakemistoon **/usr/local/bin/**:  
+
+    nadja@debian:~/tryscripts/looppaa$ sudo cp annatiedot /usr/local/bin/
+    
+
+Ja testataan vielä käyttäjällä **testierkki** toisessa hakemistossa:  
+
+    testierkki@debian:/home/nadja/tryscripts/testitiedostot$ annatiedot *
+    
+    ->
+    tiedosto1: UTF-8 Unicode text
+
+    tiedosto2: UTF-8 Unicode text
+
+    tiedosto3: UTF-8 Unicode text
+
+    tiedosto4: UTF-8 Unicode text
+
+
+    
+![Näyttökuva 2023-03-13 012858](https://user-images.githubusercontent.com/118609353/224580536-14ed88ab-e84d-454c-a814-445a516ed7bd.png)
+
+
+---
+
 #### hae
 
 Tehdään komento, joka kysyy etsittävän tiedostonimen ja tulostaa etsityn tiedoston rivien sisällön. 
@@ -390,7 +477,7 @@ Luodaan tiedosto **hae:**
     read -p "Enter file name : " filename
     while read line
     do 
-    echo $line
+      echo $line
     done < $filename  
     
     
@@ -475,6 +562,35 @@ Testataan käyttäjällä **testierkki**
 ![Näyttökuva 2023-03-13 001552](https://user-images.githubusercontent.com/118609353/224577011-ba10aab4-237d-4eda-a513-bf797d225e0d.png)
 
 
+
+    
+<!--
+**Loop**
+Luodaan tiedosto **tiedostot**:  
+    
+    nadja@debian:~/tryscripts/looppaa$ micro tiedostot
+
+    for TIEDOSTO in Ykkonen Kakkonen Kolmonen Nelonen
+    do 
+	    echo "Tiedosto $TIEDOSTO"
+    done
+    
+    
+Testataan:  
+
+    nadja@debian:~/tryscripts/looppaa$ bash tiedostot 
+
+    ->
+    Tiedosto Ykkonen
+    Tiedosto Kakkonen
+    Tiedosto Kolmonen
+    Tiedosto Nelonen
+    
+-->
+
+    
+    
+    
     
 
 ---
