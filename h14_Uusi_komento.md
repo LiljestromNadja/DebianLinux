@@ -375,6 +375,108 @@ Testataan käyttäjällä testierkki:
 ---
 ### c) Tee Linuxiin komento, joka tekee jotain monelle tiedostolle  
 
+
+
+#### hae
+
+Tehdään komento, joka kysyy etsittävän tiedostonimen ja tulostaa etsityn tiedoston rivien sisällön. 
+
+Luodaan tiedosto **hae:**  
+
+    nadja@debian:~/tryscripts$ micro hae
+    
+    ->     
+    #!/usr/bin/bash
+    read -p "Enter file name : " filename
+    while read line
+    do 
+    echo $line
+    done < $filename  
+    
+    
+Testataan hakemalla tiedostoa **moropy**:  
+
+    nadja@debian:~/tryscripts$ bash hae
+    
+    ->
+    Enter file name : moropy
+    
+    ->
+    #!/usr/bin/python3
+
+    print("")
+
+
+    username = input("Kukas siellä: ")
+    print("Koodaamisen iloa, " + username + "!")  
+    
+![Näyttökuva 2023-03-13 001921](https://user-images.githubusercontent.com/118609353/224577191-e905a8ac-032c-435a-9ce9-cc847cecd332.png)
+
+    
+Oikeudet:  
+
+    nadja@debian:~/tryscripts$ ls -l hae
+    
+    ->
+    -rw-r--r-- 1 nadja nadja 102 Mar 13 00:03 hae
+
+    nadja@debian:~/tryscripts$ chmod ugo+x hae
+    
+    nadja@debian:~/tryscripts$ ls -l hae
+    
+    ->
+    -rwxr-xr-x 1 nadja nadja 102 Mar 13 00:03 hae  
+    
+    
+Testataan hakemalla tiedostoa **tervehdi**:  
+
+    nadja@debian:~/tryscripts$ ./hae
+    
+    ->
+    Enter file name : tervehdi
+    
+    ->
+    #!/usr/bin/bash
+
+    echo "Tervehdys!"
+    echo "Tänään on: "
+    date --iso
+    
+    
+![Näyttökuva 2023-03-13 002045](https://user-images.githubusercontent.com/118609353/224577288-773fdbcb-705f-4742-8505-143aeb44bdb5.png)
+
+    
+    
+Kopioidaan tiedosto **hae** hakemistoon **/usr/local/bin/**:  
+
+    nadja@debian:~/tryscripts$ sudo cp hae /usr/local/bin/
+    
+    
+Testataan käyttäjällä **testierkki**  
+
+
+    testierkki@debian:/home/nadja/tryscripts/testitiedostot$ hae
+
+    ->
+    Enter file name : tiedosto1
+    
+    ->
+    tämä on tiedosto numero 1
+    tämän tiedoston on kirjoittanut nadja
+
+
+    tekstiä
+    tekstiä
+    tekstiä
+
+
+
+
+![Näyttökuva 2023-03-13 001552](https://user-images.githubusercontent.com/118609353/224577011-ba10aab4-237d-4eda-a513-bf797d225e0d.png)
+
+
+    
+
 ---
 ### Komentojen kertaus
 
