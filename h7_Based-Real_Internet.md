@@ -261,9 +261,9 @@ Enterillä eteenpäin. En luonut tällä kertaa passphrasea, joten jatkoin enter
         nadja@debbiedebian:~$ cd .ssh
         nadja@debbiedebian:~/.ssh$ ls
         
-        nadja@debbiedebian:~$ micro id_rsa.pub
+        nadja@debbiedebian:~$ micro id_rsa.pub 
 
-Kopioin koko pitkä pätkän (microssa CTRL+C) ja liitin se SSH Public Key -kenttään luodessani uuden Dropletin.  
+Kopioin koko pitkä pätkän (microssa CTRL+C) ja liitin se SSH Public Key -kenttään luodessani uuden Dropletin (HUOM! Käytä .pub -avainta!).  
 
 Sitten taas omaan terminaaliin:  
 
@@ -272,11 +272,13 @@ Sitten taas omaan terminaaliin:
         Are you sure you want to continue connecting?  
 
         nadja@debbiedebian:~/.ssh$ yes
-
+<!-- 
 Nyt ei tarvitse siis kirjoittaa salasanaa, koska sellaista ei luotu. Jos salasanan käytön haluaa lukita ssh-avainta käytettäessä (ole tässä tapauksessa varma, että käytät ssh-avainta, sillä jos käytössä on vain salasana, lukitset itsesi ulos rootista):
 
         root@debian-s-1vcpu-1gb-fra1-01:~# usermod --lock root
         root@debian-s-1vcpu-1gb-fra1-01:~# exit  
+
+-->
         
 <!-- Tähän toimenpiteet ennen rootin sulkemista niin että muutkin kuin root pääsevät kirjautumaan ssh:lla .
 
