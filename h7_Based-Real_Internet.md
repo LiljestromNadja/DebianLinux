@@ -235,8 +235,7 @@ Kun on ainakin yksi sudokäyttäjä tehty (ja testattu), voidaan jatkaa laittama
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
     
-Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  Vaihdoin myös takaisin 'PasswordAuthentication no 
-'. 
+Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
     
