@@ -226,7 +226,7 @@ Tämän jälkeen:
 
         nadja@harkka:~$ ssh nadja@164.92.168.180
 
-
+---
         
 
 #### Root kiinni
