@@ -63,6 +63,121 @@ Ja katsotaan Mozilla Firefox -selaimessa (http://localhost):
 
 ### b) Laita käyttäjien kotisivut (http://example.com/~tero) toimimaan. Testaa esimerkkikotisivulla.   
 
+
+Tehdään käyttäjälle oma sivu, localhost/~nadja: 
+   
+        nadja@kone:~$ curl 'http://localhost/~nadja/'
+        
+        
+Tuloksena "404 Not Found":  
+
+        ->
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html>
+            <head>
+                <title>404 Not Found</title>
+            </head>
+            <body>
+                <h1>Not Found</h1>
+                <p>The requested URL was not found on this server.</p>
+                <hr>
+                <address>Apache/2.4.54 (Debian) Server at localhost Port 80</address>
+            </body>
+        </html>  
+        
+        
+        
+        nadja@kone:~$ cd
+        nadja@kone:~$ sudo a2enmod userdir
+        
+        
+        Enabling module userdir.
+        To activate the new configuration, you need to run:
+        systemctl restart apache2
+
+
+        nadja@kone:~$ sudo systemctl restart apache2  
+        
+        
+Kokeillaan uudestaan ja huomataan että viesti on vaihtunut, 403 Forbidden:
+
+        nadja@kone:/var/www/html$ curl 'http://localhost/~nadja'
+
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html>
+            <head>
+                <title>403 Forbidden</title>
+            </head>
+            <body>
+                <h1>Forbidden</h1>
+                <p>You don't have permission to access this resource.</p>
+                <hr>
+                <address>Apache/2.4.54 (Debian) Server at localhost Port 80</address>
+            </body>
+        </html>  
+        
+        
+Luodaan kansio **public_html** sijainnissa /home/nadja/:  
+
+        nadja@kone:~$ mkdir public_html
+        nadja@kone:~$ cd public_html/
+        nadja@kone:~/public_html$ ls
+        nadja@kone:~/public_html$ micro index.html
+        
+        ->
+        <!doctype html>
+        <html>
+            <head>
+	            <title> First test page - location /home/nadja/public_html/index.html</title>
+	            <meta charset="UTF-8" />
+            </head>
+            <body>
+	            heipparallaa, tämä on uusi sivu
+	            this is http://localhost/~nadja
+            </body>
+        </html>
+        
+Kokeillaan, ja saadaan viesti 301, Moved Permanently:   
+
+        nadja@kone:/var/www/html$ curl 'http://localhost/~nadja'
+        
+        
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html>
+            <head>
+                <title>301 Moved Permanently</title>
+            </head>
+            <body>
+                <h1>Moved Permanently</h1>
+                <p>The document has moved <a href="http://localhost/~nadja/">here</a>.</p>
+                <hr>
+                <address>Apache/2.4.54 (Debian) Server at localhost Port 80</address>
+            </body>
+        </html>
+        
+Käynnistetään Apache2 uudelleen: 
+
+        nadja@kone:~$ sudo systemctl restart apache2
+        
+Ja kokeillaan uudelleen:  
+
+
+        nadja@kone:/var/www/html$ curl 'http://localhost/~nadja/'
+        <!doctype html>
+        <html>
+            <head>
+	            <title> First test page - location /home/nadja/public_html/index.html</title>
+        	    <meta charset="UTF-8" />
+            </head>
+            <body>
+	            heipparallaa, tämä on uusi sivu
+	            this is http://localhost/~nadja
+            </body>
+        </html>
+        
+        
+        
+
 ### c) Tee uusi käyttäjä. Kirjaudu ulos omastasi ja sisään uutena käyttäjänä. Tee uudellekin käyttäjälle kotisivu.  
 
 Uuden käyttäjän lisääminen:  
