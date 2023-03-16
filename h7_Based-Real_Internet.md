@@ -194,6 +194,40 @@ Lisäsin käyttäjät sudo-oikeuksilla(snotroot) ja ilman(notroot):
 
 
 ---
+#### ssh-kirjautuminen myös muille kuin rootille  
+
+Ennen kuin root laitetaan kiinni, täytyy luoda ainakin yksi käyttäjä, jolla on sudo-oikeudet. Tämän jälkeen luodaan ssh-kirjautuminen myös tälle uudelle käyttäjälle. Loin käyttäjän nadja.  
+
+        root@debian-s-1vcpu-1gb-fra1-01-harkka:~# sudoedit /etc/ssh/sshd_config
+
+        vaihda ->
+        PasswordAuthentication yes
+        
+        root@debian-s-1vcpu-1gb-fra1-01-harkka:~# sudo systemctl restart ssh
+
+Avataan toinen terminaali-ikkuna (omalla koneella) ja kokeillaan ensin kirjautua salasanalla:  
+
+
+        nadja@harkka:~$ ssh nadja@164.92.168.180
+        
+        ->
+        nadja@164.92.168.180's password: 
+        
+Onnistui, sitten poistutaan:  
+
+        nadja@debian-s-1vcpu-1gb-fra1-01-harkka:~$ exit  
+        
+        
+Tämän jälkeen:  
+
+        nadja@harkka:~$ ssh-copy-id nadja@164.92.168.180 
+        
+..jonka jälkeen pitää vielä kerran antaa salasana, jonka jälkeen pääsee kirjautumaan ssh-avaimella:  
+
+        nadja@harkka:~$ ssh nadja@164.92.168.180
+
+
+        
 
 #### Root kiinni
 
