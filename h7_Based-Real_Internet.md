@@ -201,7 +201,7 @@ Ennen kuin root laitetaan kiinni, täytyy luoda ainakin yksi käyttäjä, jolla 
         root@debian-s-1vcpu-1gb-fra1-01-harkka:~# sudoedit /etc/ssh/sshd_config
 
         vaihda ->
-        PasswordAuthentication yes
+        PasswordAuthentication yes 
         
         root@debian-s-1vcpu-1gb-fra1-01-harkka:~# sudo systemctl restart ssh
 
@@ -229,25 +229,40 @@ Tämän jälkeen:
 ---
         
 
-#### Root kiinni
+#### Rootin kirjautuminen pois päältä
 
 Kun on ainakin yksi sudokäyttäjä tehty (ja testattu), voidaan jatkaa laittamalla rootin ssh-kirjautuminen jäähylle:
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudoedit /etc/ssh/sshd_config
     
-Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
+Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  (Jos PasswordAuthenticationia ei enää tarvitse, senkin voi laittaa takaisin: PasswordAuthentication no)  
 
     root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart (tai sudo systemctl restart ssh)
+    root@debian-s-1vcpu-1gb-fra1-01:~# sudo systemctl status ssh
+
+    
     
 ![Näyttökuva (209) rootLoginNo](https://user-images.githubusercontent.com/118609353/217683021-b324c22c-1b79-4184-ad9d-773aba584bf2.png)
 
 ---
 
-**Rootin salasanan lukitseminen**
+**Root-käyttäjän tilin lukitseminen**
 
 
         root@debian-s-1vcpu-1gb-fra1-01:~# usermod --lock root
         root@debian-s-1vcpu-1gb-fra1-01:~# exit
+        
+ Manuaalissa:        
+        
+        nadja@debian-s-1vcpu-1gb-fra1-01-harkka:~$ man usermod | grep 'lock'
+        
+        ->
+        -L, --lock
+           Note: if you wish to lock the account (not only access with a password),
+        -U, --unlock
+           Unlock a user's password. This removes the '!' in front of the encrypted
+           Note: if you wish to unlock the account (not only access with a
+
 
 ---
 
