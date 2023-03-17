@@ -194,7 +194,7 @@ Lisäsin käyttäjät sudo-oikeuksilla(snotroot) ja ilman(notroot):
 
 
 ---
-#### ssh-kirjautuminen myös muille kuin rootille  
+#### SSH-kirjautuminen myös muille kuin rootille  
 
 Ennen kuin root laitetaan kiinni, täytyy luoda ainakin yksi käyttäjä, jolla on sudo-oikeudet. Tämän jälkeen luodaan ssh-kirjautuminen myös tälle uudelle käyttäjälle. Loin käyttäjän nadja.  
 
@@ -237,7 +237,7 @@ Kun on ainakin yksi sudokäyttäjä tehty (ja testattu), voidaan jatkaa laittama
     
 Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen 'PermitRootLogin no'.  
 
-    root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart
+    root@debian-s-1vcpu-1gb-fra1-01:~#  sudo service ssh restart (tai sudo systemctl restart ssh)
     
 ![Näyttökuva (209) rootLoginNo](https://user-images.githubusercontent.com/118609353/217683021-b324c22c-1b79-4184-ad9d-773aba584bf2.png)
 
