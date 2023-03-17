@@ -250,6 +250,9 @@ Etsin tiedostosta kohdan (nano, CTRL+W) 'PermitRootLogin yes' ja vaihdoin siihen
         root@debian-s-1vcpu-1gb-fra1-01:~# exit
 
 ---
+
+---
+
 #### SSH-avain (omalla virtuaalikoneella)  
 
         nadja@debbiedebian:~$ ssh-key ja tabia perään
@@ -301,7 +304,9 @@ Testaillaan vielä:
 
 ![Näyttökuva (207) sshkeytoimiirootlukittu](https://user-images.githubusercontent.com/118609353/217667745-e6654d35-1c0b-4ae9-8139-a6c2df196914.png)
 
-Koska kaikki meni niin kuin pitikin, muistin virkistämiseksi päivitykset ja tulimuurit kohdilleen: 
+---
+
+Komentojen kertausta: 
 
         root@debian-s-1vcpu-1gb-fra1-01:~# sudo apt-get update  
 
@@ -355,10 +360,7 @@ Lukittuun rootiin oli toki muitakin pyrkijöitä:
 
 
 
-<!---
-d-osio oli vähän myöhässä palautettu
 
--->
 
 
 
