@@ -1,7 +1,7 @@
 ## Git to Debian 
 
 
-Installing Git to Debian 11:Also remember to create a new repository to Github.  
+Installing Git to Debian 11, also remember to create a new repository to Github.  
 
      git --version
      -> bash: git: command not found
