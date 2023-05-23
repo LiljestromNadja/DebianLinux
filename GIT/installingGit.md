@@ -3,7 +3,9 @@
 
 Installing Git to Debian 11:Also remember to create a new repository to Github.  
 
-    git --version
+     git --version
+     -> bash: git: command not found
+
 
 
      sudo apt-get update
@@ -15,8 +17,7 @@ Installing Git to Debian 11:Also remember to create a new repository to Github.
 
      git init
 
-     git status
-      
+     git status      
      -> On branch master
      No commits yet
 
@@ -44,7 +45,7 @@ Installing Git to Debian 11:Also remember to create a new repository to Github.
     Username for 'https://github.com': Give you github username	
     Password for 'https://githubusername@github.com': 
     remote: Support for password authentication was removed on August 13, 2021.
-    remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+    remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of 	authentication.
     fatal: Authentication failed for 'https://github.com/githubusername/REPOSITORY.git/'
     
     --> go to github and create a token
