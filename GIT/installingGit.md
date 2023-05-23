@@ -1,7 +1,7 @@
 ## Git to Debian 
 
 
-Installing Git to Debian 11:  
+Installing Git to Debian 11:Also remember to create a new repository to Github.  
 
     git --version
 
@@ -34,6 +34,8 @@ Installing Git to Debian 11:
     git status
 
     git commit -m "first commit"
+    
+    (If you haven't created a repository on github yet, create it now)
   
     git remote add origin https://github.com/githubusername/REPOSITORY.git
         
