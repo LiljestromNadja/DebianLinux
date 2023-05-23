@@ -6,8 +6,6 @@ Installing Git to Debian 11:Also remember to create a new repository to Github.
      git --version
      -> bash: git: command not found
 
-
-
      sudo apt-get update
      sudo apt install git
 
@@ -27,8 +25,7 @@ Installing Git to Debian 11:Also remember to create a new repository to Github.
 	   kesadjango/
      manage.py
      people/
-     todo/
-  
+     todo/  
   
     git add .
 
